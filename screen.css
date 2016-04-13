@@ -67,13 +67,11 @@ form {
   margin-top: 2em;
 }
 
-input, select {
+input {
   margin-top: 1ex;
   width: 50%;
   padding: 1ex;
-}
-
-input {
+  
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
