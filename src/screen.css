@@ -49,6 +49,10 @@ table {
 
 /* end CSS Reset */
 
+body {
+  font-family: 'Droid Sans', sans-serif;
+}
+
 header {
   text-align: center;
   padding-top: 2em;
