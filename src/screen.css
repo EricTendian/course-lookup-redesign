@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
     display: block;
 }
@@ -50,31 +50,31 @@ table {
 /* end CSS Reset */
 
 header {
-  text-align: center;
-  padding-top: 2em;
-  padding-bottom: 2em;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
 
 main {
-  text-align: center;
+    text-align: center;
 }
 
 header h1 {
-  font-size: 3em;
+    font-size: 3em;
 }
 
 form {
-  margin-top: 2em;
+    margin-top: 2em;
 }
 
 input {
-  width: 50%;
-  padding: 1ex;
+    width: 50%;
+    padding: 1ex;
 
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-} 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 input[type=text], input[type=password] {
     border: none;
@@ -87,30 +87,30 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  color: grey;
+    color: grey;
 }
 
 label {
-  display: none;
+    display: none;
 }
 
 #top, #bottom, #left, #right {
-	background: #ff3418;
-	position: fixed;
-	}
-	#left, #right {
-		top: 0; bottom: 0;
-		width: 1em;
-		}
-		#left { left: 0; }
-		#right { right: 0; }
-		
-	#top, #bottom {
-		left: 0; right: 0;
-		height: 1em;
-		}
-		#top { top: 0; }
-		#bottom { bottom: 0; }
+    background: #ff3418;
+    position: fixed;
+}
+#left, #right {
+    top: 0; bottom: 0;
+    width: 1em;
+}
+#left { left: 0; }
+#right { right: 0; }
+
+#top, #bottom {
+    left: 0; right: 0;
+    height: 1em;
+}
+#top { top: 0; }
+#bottom { bottom: 0; }
 
 /* Media Queries */
 
@@ -118,43 +118,43 @@ label {
   50em, size 2
 */
 @media screen and (max-width: 50em) {
-  h1 {
-    font-size: 8em;
-  }
+    header h1 {
+        font-size: 8em;
+    }
 }
 
 /*
   40em, size 3
 */
 @media screen and (max-width: 40em) {
-  h1 {
-    font-size: 6em;
-  }
+    header h1 {
+        font-size: 6em;
+    }
 }
 
 /*
   30em, size 4
 */
 @media screen and (max-width: 30em) {
-  h1 {
-    font-size: 4em;
-  }
+    header h1 {
+        font-size: 4em;
+    }
 }
 
 /*
   20em, size 5
 */
 @media screen and (max-width: 20em) {
-  h1 {
-    font-size: 2em;
-  }
+    header h1 {
+        font-size: 2em;
+    }
 }
 
 /*
   10em, size 6
 */
 @media screen and (min-width: 10em) {
-  h1 {
-    font-size: 1em;
-  }
+    header h1 {
+        font-size: 1em;
+    }
 }
