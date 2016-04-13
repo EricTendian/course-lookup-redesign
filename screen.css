@@ -60,5 +60,17 @@ h1 {
 }
 
 form {
-  text-align: center;
+  
+}
+
+input, button {
+  display: block;
+}
+
+input[type=checkbox]{
+  display: inline-block;
+}
+
+label {
+  
 }
