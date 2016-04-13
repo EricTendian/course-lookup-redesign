@@ -98,6 +98,8 @@ label {
   display: none;
 }
 
+/* Borders */
+
 #top, #bottom, #left, #right {
   background: #DC002A; /* Same as Hawk red */
   position: fixed;
@@ -118,6 +120,19 @@ label {
 
 #top { top: 0; }
 #bottom { bottom: 0; }
+
+/* Banner */
+
+#banner {
+  line-height: 0;
+  display: inline-block;
+}
+
+#bannerExtender {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
 
 /* Media Queries */
 
