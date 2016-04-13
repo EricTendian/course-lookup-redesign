@@ -68,14 +68,19 @@ form {
 }
 
 input {
-  margin-top: 1ex;
   width: 50%;
   padding: 1ex;
-  
+
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 } 
+
+input[type=text], input[type=password] {
+    border: none;
+    border-bottom: thin solid black;
+    margin-bottom: 2em;
+}
 
 input[type=submit] {
   /* width: 40%; */
@@ -86,5 +91,5 @@ input[type=submit]:hover {
 }
 
 label {
-  
+  display: none;
 }
