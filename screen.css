@@ -48,3 +48,17 @@ table {
 }
 
 /* end CSS Reset */
+
+header {
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+
+h1 {
+  font-size: 10em;
+}
+
+form {
+  text-align: center;
+}
