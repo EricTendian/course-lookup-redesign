@@ -48,3 +48,43 @@ table {
 }
 
 /* end CSS Reset */
+
+header {
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+main {
+  text-align: center;
+}
+
+h1 {
+  font-size: 10em;
+}
+
+form {
+  margin-top: 2em;
+}
+
+input {
+  margin-top: 1ex;
+  width: 50%;
+  padding: 1ex;
+  
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} 
+
+input[type=submit] {
+  /* width: 40%; */
+}
+
+input[type=submit]:hover {
+  color: grey;
+}
+
+label {
+  
+}
