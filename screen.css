@@ -100,7 +100,7 @@ label {
   50em, size 2
 */
 @media screen and (max-width: 50em) {
-  h1 {
+  header h1 {
     font-size: 8em;
   }
 
@@ -108,7 +108,7 @@ label {
   40em, size 3
 */
 @media screen and (max-width: 40em) {
-  h1 {
+  header h1 {
     font-size: 6em;
   }
 
@@ -116,7 +116,7 @@ label {
   30em, size 4
 */
 @media screen and (max-width: 30em) {
-  h1 {
+  header h1 {
     font-size: 4em;
   }
 }
@@ -125,7 +125,7 @@ label {
   20em, size 5
 */
 @media screen and (max-width: 20em) {
-  h1 {
+  header h1 {
     font-size: 2em;
   }
 }
