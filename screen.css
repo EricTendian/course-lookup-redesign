@@ -93,3 +93,41 @@ input[type=submit]:hover {
 label {
   display: none;
 }
+
+
+/* Media Queries */
+
+/*
+  50em, size 2
+*/
+@media screen and (max-width: 50em) {
+  h1 {
+    font-size: 8em;
+  }
+
+/*
+  40em, size 3
+*/
+@media screen and (max-width: 40em) {
+  h1 {
+    font-size: 6em;
+  }
+
+/*
+  30em, size 4
+*/
+@media screen and (max-width: 30em) {
+  h1 {
+    font-size: 4em;
+  }
+}
+
+/*
+  20em, size 5
+*/
+@media screen and (max-width: 20em) {
+  h1 {
+    font-size: 2em;
+  }
+}
+}
