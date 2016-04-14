@@ -111,14 +111,9 @@ img.logo {
 /* Banner */
 
 #banner {
-  line-height: 0;
-  display: inline-block;
-}
-
-#bannerExtender {
-  float: right;
-  margin: 0;
-  padding: 0;
+  text-align: left;
+  background: url(https://my.iit.edu/media/iit/images/head_bkg_brw3.gif);
+  background-repeat: repeat-x;
 }
 
 /* Media Queries */
