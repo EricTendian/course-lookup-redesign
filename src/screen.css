@@ -49,12 +49,16 @@ table {
 
 /* end CSS Reset */
 
-body {
+body#login {
   box-sizing: border-box;
   border: 1em solid #dc002a; /* Hawk Red */
   position: absolute;
   min-height: 100%;
   min-width: 100%;
+
+}
+
+body {
   font-family: 'Droid Sans', sans-serif;
 }
 
