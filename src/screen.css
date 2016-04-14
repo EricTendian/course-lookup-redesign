@@ -93,43 +93,33 @@ img.logo {
   50em, size 2
 */
 @media screen and (max-width: 50em) {
-  header h1 {
-    font-size: 8em;
-  }
+
 }
 
 /*
   40em, size 3
 */
 @media screen and (max-width: 40em) {
-  header h1 {
-    font-size: 6em;
-  }
+
 }
 
 /*
   30em, size 4
 */
 @media screen and (max-width: 30em) {
-  header h1 {
-    font-size: 4em;
-  }
+
 }
 
 /*
   20em, size 5
 */
 @media screen and (max-width: 20em) {
-  header h1 {
-    font-size: 2em;
-  }
+
 }
 
 /*
   10em, size 6
 */
 @media screen and (max-width: 10em) {
-  header h1 {
-    font-size: 1em;
-  }
+
 }
