@@ -49,12 +49,16 @@ table {
 
 /* end CSS Reset */
 
-body {
+body#login {
   box-sizing: border-box;
-  border: 1em solid #ff3418;
+  border: 1em solid #dc002a; /* Hawk Red */
   position: absolute;
   min-height: 100%;
   min-width: 100%;
+
+}
+
+body {
   font-family: 'Droid Sans', sans-serif;
 }
 
@@ -108,17 +112,10 @@ img.logo {
   height: 25%;
 }
 
-/* Banner */
-
 #banner {
-  line-height: 0;
-  display: inline-block;
-}
-
-#bannerExtender {
-  float: right;
-  margin: 0;
-  padding: 0;
+  text-align: left;
+  background: url(img/headerExtender.gif);
+  background-repeat: repeat-x;
 }
 
 /* Media Queries */
