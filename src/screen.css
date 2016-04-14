@@ -51,7 +51,7 @@ table {
 
 body {
   box-sizing: border-box;
-  border: 1em solid #ff3418;
+  border: 1em solid #dc002a; /* Hawk Red */
   position: absolute;
   min-height: 100%;
   min-width: 100%;
