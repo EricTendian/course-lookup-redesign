@@ -55,6 +55,7 @@ body {
   position: absolute;
   min-height: 100%;
   min-width: 100%;
+  font-family: 'Droid Sans', sans-serif;
 }
 
 header {
@@ -105,6 +106,19 @@ label {
 img.logo {
   width: 25%;
   height: 25%;
+}
+
+/* Banner */
+
+#banner {
+  line-height: 0;
+  display: inline-block;
+}
+
+#bannerExtender {
+  float: right;
+  margin: 0;
+  padding: 0;
 }
 
 /* Media Queries */
