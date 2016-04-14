@@ -108,11 +108,9 @@ img.logo {
   height: 25%;
 }
 
-/* Banner */
-
 #banner {
   text-align: left;
-  background: url(https://my.iit.edu/media/iit/images/head_bkg_brw3.gif);
+  background: url(img/headerExtender.gif);
   background-repeat: repeat-x;
 }
 
