@@ -57,6 +57,16 @@ body#login input[type="password"] {
   margin-bottom: 2em;
 }
 
+body#login input[type="text"] {
+  background: url(img/user.svg) no-repeat scroll;
+  padding-left: 3em;
+}
+
+body#login input[type="password"] {
+  background: url(img/key.svg) no-repeat scroll;
+  padding-left: 3em;
+}
+
 body#login input[type=submit]:hover {
   color: grey;
 }
@@ -71,6 +81,7 @@ img.logo {
 }
 
 #banner {
+  margin-top: -2em; /* Banner now touches top of viewport */
   text-align: left;
   background: url(img/headerExtender.gif);
   background-repeat: repeat-x;
@@ -78,7 +89,7 @@ img.logo {
 
 /* LOGIN-SPECIFIC STYLES END */
 
-/* INDEX-SPECIFIC STYLES STARTS */
+/* INDEX-SPECIFIC STYLES START */
 .navwrapper ul {
 	background-color: #dc002a;
   	text-align: center;
@@ -140,7 +151,7 @@ img.logo {
   	height: 2.5em;
   	padding: .2em 0.5em 0.5em 0.5em;
 }
-/* INDEX-SPECIFIC STYLES STARTS */
+/* INDEX-SPECIFIC STYLES END */
 
 /* COURSE SEARCH SPECIFIC STYLES START */
 #search-form label {
@@ -151,7 +162,7 @@ img.logo {
 }
 /* COURSE SEARCH SPECIFIC STYLES END */
 
-/* Media Queries */
+/* MEDIA QUERIES START */
 
 /*
   50em, size 2
@@ -187,3 +198,5 @@ img.logo {
 @media screen and (max-width: 10em) {
 
 }
+
+/* MEDIA QUERIES END */
