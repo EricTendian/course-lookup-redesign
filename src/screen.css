@@ -81,6 +81,7 @@ img.logo {
 }
 
 #banner {
+  margin-top: -2em; /* Banner now touches top of viewport */
   text-align: left;
   background: url(img/headerExtender.gif);
   background-repeat: repeat-x;
