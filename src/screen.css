@@ -78,6 +78,70 @@ img.logo {
 
 /* LOGIN-SPECIFIC STYLES END */
 
+/* INDEX-SPECIFIC STYLES STARTS */
+.navwrapper ul {
+	background-color: #dc002a;
+  	text-align: center;
+  	padding: .2em;
+  	margin: 0;
+  	list-style-type: none;
+  	color: #fff;
+  	min-width: 100%;
+  	font-family: 'Droid Sans', sans-serif;
+}
+
+.navwrapper ul {
+	display: flex;
+}
+
+.navwrapper li {
+  	font-family: 'Droid Sans', sans-serif;
+  	font-size: 0.60em;
+  	font-weight: bold;
+  	height: 2.5em;
+  	padding: .2em 0.5em 0.5em 0.5em;
+}
+
+
+#navbutton {
+	flex: 1;
+	text-align: left;
+  	height: 100%;
+  	margin-top: 1em;
+}
+ 
+.nav {
+	flex: 1;
+	margin-top: 1.8em;
+}
+
+.navwrapper a {
+	text-decoration: none;
+  	color: #fff;
+  	display: block;
+  	transition: .3s background-color;
+}
+ 
+.navwrapper a:hover {
+	background-color: #42BCFF;
+	padding: 1.5em;
+}
+ 
+.navwrapper a.active {
+	background-color: #fff;
+  	color: #444;
+  	cursor: default;
+}
+
+#yourname {
+	font-family: 'Droid Sans', sans-serif;
+  	font-size: 0.60em;
+  	font-weight: bold;
+  	height: 2.5em;
+  	padding: .2em 0.5em 0.5em 0.5em;
+}
+/* INDEX-SPECIFIC STYLES STARTS */
+
 /* COURSE SEARCH SPECIFIC STYLES START */
 #search-form label {
   display: block;
