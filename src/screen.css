@@ -57,6 +57,16 @@ body#login input[type="password"] {
   margin-bottom: 2em;
 }
 
+body#login input[type="text"] {
+  background: url(img/user.svg) no-repeat scroll;
+  padding-left: 3em;
+}
+
+body#login input[type="password"] {
+  background: url(img/key.svg) no-repeat scroll;
+  padding-left: 3em;
+}
+
 body#login input[type=submit]:hover {
   color: grey;
 }
