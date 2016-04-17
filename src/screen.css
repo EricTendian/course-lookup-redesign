@@ -27,6 +27,23 @@ form {
   margin-top: 2em;
 }
 
+.content-wrapper {
+	font-size: 1.1em;
+	font-weight: 600;
+	line-height: 120%;
+  	background-color: #FBF9F5;
+  	display: block;
+  	width: 85%;
+	border: 0.15em solid #232323;
+	-webkit-border-radius: 0.3em;
+    border-radius: 0.3em;
+	padding: 1em;
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 /* LOGIN-SPECIFIC STYLES START */
 
 body#login {
@@ -151,6 +168,13 @@ img.logo {
   	height: 2.5em;
   	padding: .2em 0.5em 0.5em 0.5em;
 }
+
+#news {
+  display: block;
+  text-align: center;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
 /* INDEX-SPECIFIC STYLES END */
 
 /* COURSE SEARCH SPECIFIC STYLES START */
@@ -159,6 +183,10 @@ img.logo {
 }
 #search-results {
   font-size: 0.8em;
+}
+
+#search-form {
+	
 }
 /* COURSE SEARCH SPECIFIC STYLES END */
 
@@ -196,6 +224,7 @@ img.logo {
   10em, size 6
 */
 @media screen and (max-width: 10em) {
+	
 
 }
 
