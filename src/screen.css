@@ -156,8 +156,10 @@ main {
 }
 
 .greeting {
-  font-weight: bold;
   margin: 1em 0;
+
+  font-weight: bold;
+  font-style: italic;
 }
 /* INDEX-SPECIFIC STYLES END */
 
