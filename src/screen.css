@@ -210,17 +210,6 @@ input#search {
   font-size: 0.8em;
 }
 
-.course-lookup-page main {
-  width: 60%;
-  float: left;
-  margin-right: 1em;
-}
-
-.course-lookup-page aside {
-  float: left;
-  width: 38%;
-}
-
 #cart ul {
   font-size: 0.8em;
   list-style-type: none;
@@ -237,6 +226,17 @@ input#search {
 @media screen and (min-width: 48em) {
   .navbar {
     display: flex;
+  }
+  
+  .course-lookup-page main {
+    width: 60%;
+    float: left;
+    margin-right: 1em;
+  }
+
+  .course-lookup-page aside {
+    float: left;
+    width: 37%;
   }
 }
 /* MEDIA QUERIES END */
