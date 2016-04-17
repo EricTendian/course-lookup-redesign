@@ -1,491 +1,511 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
 <html class="no-js" lang="">
 <head>
   <meta charset="utf-8">
+  <link rel="shortcut icon" href="img/myiit.gif">
   <meta name="description" content="The fastest course browser at Illinois Tech">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pop</title>
+  <title>Course Lookup</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
   <link rel="stylesheet" href="screen.css">
 </head>
-<body>
+<body class="course-lookup-page">
   <header>
-
+    <div class="banner">
+      <img src="img/header.gif" alt="IIT Logo">
+    </div>
+    <nav>
+      <div class="navwrapper">
+        <ul id="nav" class="navbar">
+          <!-- <li class="nav-logo"></li> -->
+          <li class="nav"><a href="https://iit.edu/news/iittoday/">News</a></li>
+          <li class="nav"><a href="academics.html">Academics</a></li>
+          <li class="nav"><a href="http://my.iit.edu/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=u12l1s22&uP_tparam=frm&frm=">Finances</a></li>
+          <li class="nav"><a href="http://my.iit.edu/render.userLayoutRootNode.uP?uP_root=root&uP_sparam=activeTab&activeTab=u26l1s13&uP_tparam=frm&frm=">Library</a></li>
+          <li class="nav"><a href="https://blackboard.iit.edu/">Blackboard</a></li>
+          <li class="nav"><a href="http://my.iit.edu/jsp/help/HelpFrameset.jsp">Help</a></li>
+          <li class="nav"><a href="login.html">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1>Course Lookup</h1>
   </header>
-  <main>
-    <section id="search-form">
-      <form>
-        <input type="text" id="search" placeholder="Search courses for...">
-        <button type="button">Go!</button>
-        <div id="search-options">
-          <div class="options">
-            <div class="checkbox">
-              <strong>Search in:</strong>
-              <label>
-                <input type="checkbox" id="search-desc" checked> Course descriptions
-              </label>
-              <label>
-                <input type="checkbox" id="search-sect" checked> Section descriptions
-              </label>
+  <div class="container">
+    <main>
+      <section id="search-form">
+        <form>
+          <input type="text" id="search" placeholder="Search courses for...">
+          <button type="button">Go!</button>
+          <div id="search-options">
+            <div class="options">
+              <div class="checkbox">
+                <strong>Search in:</strong>
+                <label>
+                  <input type="checkbox" id="search-desc" checked> Course descriptions
+                </label>
+                <label>
+                  <input type="checkbox" id="search-sect" checked> Section descriptions
+                </label>
+              </div>
+            </div>
+            <div class="options">
+              <div class="radio">
+                <strong>Result format:</strong><br>
+                <label>
+                  <input type="radio" name="result-format" id="result-sm"> Just title
+                </label>
+                <label>
+                  <input type="radio" name="result-format" id="result-med"> Title and description
+                </label>
+                <label>
+                  <input type="radio" name="result-format" id="result-big" checked> Everything
+                </label>
+              </div>
+            </div>
+            <div class="options">
+              <div class="checkbox">
+                <strong>Other:</strong>
+                <label>
+                  <input type="checkbox" id="show-links" checked> Show links (like to course catalog)
+                </label>
+                <label>
+                  <input type="checkbox" id="collapse-sim" checked> Collapse five or more similar sections
+                </label>
+                <label>
+                  <input type="checkbox" id="hide-no-sections" checked> Hide courses without sections
+                </label>
+              </div>
             </div>
           </div>
-          <div class="options">
-            <div class="radio">
-              <strong>Result format:</strong><br>
-              <label>
-                <input type="radio" name="result-format" id="result-sm"> Just title
-              </label>
-              <label>
-                <input type="radio" name="result-format" id="result-med"> Title and description
-              </label>
-              <label>
-                <input type="radio" name="result-format" id="result-big" checked> Everything
-              </label>
-            </div>
+        </form>
+      </section>
+      <section id="search-results">
+        <article class="course">
+          <header>
+            <h3>ITMM 481: Information Technology Entrepreneurship</h3>
+          </header>
+          <div class="course-info">
+            <p>This course prepares students to become leaders in information technology and to build ITM companies. Students design and develop a prototype ITM product and prepare a business plan and venture proposal presentation.</p>
+            <ul class="tags">
+              <li>3 credit(s)</li>
+              <li>Standard Tuition Rate</li>
+            </ul>
+
+            <table class="sections">
+              <caption>Sections (Fall 2016)</caption>
+              <thead>
+                <tr>
+                  <th class="crn">CRN</th>
+                  <th class="type">Type</th>
+                  <th class="time">Time</th>
+                  <th class="location">Location</th>
+                  <th class="instructors">Instructor(s)</th>
+                  <th class="enrollment">Enrolled</th>
+                  <th class="waitlist">Waitlisted</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="section" id="section17905">
+                  <td class="crn">
+                    <a href="javascript:;" onclick="addToCart(17905)" class="button button-small">+ 17905</a>
+                    <a href="https://my102.iit.edu/banr/bwckschd.p_disp_detail_sched?term_in=201710&amp;crn_in=17905" target="_blank" class="button button-small" title="View detailed section information">Section info</a>
+                  </td>
+                  <td class="type">Class: Lecture</td>
+                  <td class="time">T 6:25 pm - 9:05 pm</td>
+                  <td class="location">TBA</td>
+                  <td class="instructors">Adarsh K. Arora</td>
+                  <td class="enrollment"><strong>3</strong>/5</td>
+                  <td class="waitlist">0</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="options">
-            <div class="checkbox">
-              <strong>Other:</strong>
-              <label>
-                <input type="checkbox" id="show-links" checked> Show links (like to course catalog)
-              </label>
-              <label>
-                <input type="checkbox" id="collapse-sim" checked> Collapse five or more similar sections
-              </label>
-              <label>
-                <input type="checkbox" id="hide-no-sections" checked> Hide courses without sections
-              </label>
-            </div>
+          <footer>
+            <a class="button button-small" href="https://my102.iit.edu/banr/bwckctlg.p_disp_course_detail?cat_term_in=201710&amp;subj_code_in=ITMM&amp;crse_numb_in=481" target="_blank" title="Opens in a new window">View in course catalog</a>
+            <a class="button button-small" href="javascript:;" onclick="$(this).parents('div.course').find('form').submit()">View course evaluations</a>
+            <form action="http://retention.iit.edu/course_eval_summary_result.php" method="post" target="_blank"><input type="hidden" name="course[]" value="ITMM481"><input type="hidden" name="instructor[]" value="BLANK"></form>
+          </footer>
+        </article>
+        <article class="course">
+          <header>
+            <h3>ITMM 581: Information Technology Entrepreneurship</h3>
+          </header>
+          <div class="course-info">
+            <p>This course prepares students to become leaders in information technology and to build ITM companies. Students design and develop a prototype ITM product and prepare a business plan and venture proposal presentation.</p>
+            <ul class="tags">
+              <li>3 credit(s)</li>
+              <li>Standard Tuition Rate</li>
+            </ul>
+
+            <table class="sections">
+              <caption>Sections (Fall 2016)</caption>
+              <thead>
+                <tr>
+                  <th class="crn">CRN</th>
+                  <th class="type">Type</th>
+                  <th class="time">Time</th>
+                  <th class="location">Location</th>
+                  <th class="instructors">Instructor(s)</th>
+                  <th class="enrollment">Enrolled</th>
+                  <th class="waitlist">Waitlisted</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="section" id="section17906">
+                  <td class="crn">
+                    <a href="javascript:;" onclick="addToCart(17906)" class="button button-small">+ 17906</a>
+                    <a href="https://my102.iit.edu/banr/bwckschd.p_disp_detail_sched?term_in=201710&amp;crn_in=17906" target="_blank" class="button button-small" title="View detailed section information">Section info</a>
+                  </td>
+                  <td class="type">Class: Lecture</td>
+                  <td class="time">T 6:25 pm - 9:05 pm</td>
+                  <td class="location">TBA</td>
+                  <td class="instructors">Adarsh K. Arora</td>
+                  <td class="enrollment"><strong>18</strong>/30</td>
+                  <td class="waitlist">0</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-        </div>
-      </form>
-    </section>
-    <section id="search-results">
-      <article class="course">
-        <header>
-          <h4>ITMM 481: Information Technology Entrepreneurship</h4>
-        </header>
-        <div class="course-info">
-          <p>This course prepares students to become leaders in information technology and to build ITM companies. Students design and develop a prototype ITM product and prepare a business plan and venture proposal presentation.</p>
-          <ul class="tags">
-            <li>3 credit(s)</li>
-            <li>Standard Tuition Rate</li>
-          </ul>
+          <footer>
+            <a class="button button-small" href="https://my102.iit.edu/banr/bwckctlg.p_disp_course_detail?cat_term_in=201710&amp;subj_code_in=ITMM&amp;crse_numb_in=581" target="_blank" title="Opens in a new window">View in course catalog</a>
+            <a class="button button-small" href="javascript:;" onclick="$(this).parents('div.course').find('form').submit()">View course evaluations</a>
+            <form action="http://retention.iit.edu/course_eval_summary_result.php" method="post" target="_blank"><input type="hidden" name="course[]" value="ITMM581"><input type="hidden" name="instructor[]" value="BLANK"></form>
+          </footer>
+        </article>
+        <article class="course">
+          <header>
+            <h3>ITM 312: Introduction to Systems Software Programming</h3>
+          </header>
+          <div class="course-info">
+            <p>Introduces basic concepts of systems programming. Students learn to apply basic programming concepts toward solving problems, create source files and implement header files, work with and effectively use basic data types, abstract data types, control structures, code modularization and arrays. Students will be introduced to object paradigm including, classes, inheritance, and polymorphism applications.</p>
+            <ul class="tags">
+              <li>3 credit(s)</li>
+              <li>Standard Tuition Rate</li>
+            </ul>
 
-          <table class="sections">
-            <caption>Sections (Fall 2016)</caption>
-            <thead>
-              <tr>
-                <th class="crn">CRN</th>
-                <th class="type">Type</th>
-                <th class="time">Time</th>
-                <th class="location">Location</th>
-                <th class="instructors">Instructor(s)</th>
-                <th class="enrollment">Enrolled</th>
-                <th class="waitlist">Waitlisted</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="section" id="section17905">
-                <td class="crn">
-                  <a href="javascript:;" onclick="addToCart(17905)" class="button button-small">+ 17905</a>
-                  <a href="https://my102.iit.edu/banr/bwckschd.p_disp_detail_sched?term_in=201710&amp;crn_in=17905" target="_blank" class="button button-small" title="View detailed section information">Section info</a>
-                </td>
-                <td class="type">Class: Lecture</td>
-                <td class="time">T 6:25 pm - 9:05 pm</td>
-                <td class="location">TBA</td>
-                <td class="instructors">Adarsh K. Arora</td>
-                <td class="enrollment"><strong>3</strong>/5</td>
-                <td class="waitlist">0</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <footer>
-          <a class="button button-small" href="https://my102.iit.edu/banr/bwckctlg.p_disp_course_detail?cat_term_in=201710&amp;subj_code_in=ITMM&amp;crse_numb_in=481" target="_blank" title="Opens in a new window">View in course catalog</a>
-          <a class="button button-small" href="javascript:;" onclick="$(this).parents('div.course').find('form').submit()">View course evaluations</a>
-          <form action="http://retention.iit.edu/course_eval_summary_result.php" method="post" target="_blank"><input type="hidden" name="course[]" value="ITMM481"><input type="hidden" name="instructor[]" value="BLANK"></form>
-        </footer>
-      </article>
-      <article class="course">
-        <header>
-          <h4>ITMM 581: Information Technology Entrepreneurship</h4>
-        </header>
-        <div class="course-info">
-          <p>This course prepares students to become leaders in information technology and to build ITM companies. Students design and develop a prototype ITM product and prepare a business plan and venture proposal presentation.</p>
-          <ul class="tags">
-            <li>3 credit(s)</li>
-            <li>Standard Tuition Rate</li>
-          </ul>
+            <table class="sections">
+              <caption>Sections (Fall 2016)</caption>
+              <thead>
+                <tr>
+                  <th class="crn">CRN</th>
+                  <th class="type">Type</th>
+                  <th class="time">Time</th>
+                  <th class="location">Location</th>
+                  <th class="instructors">Instructor(s)</th>
+                  <th class="enrollment">Enrolled</th>
+                  <th class="waitlist">Waitlisted</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="section" id="section16814">
+                  <td class="crn">
+                    <a href="javascript:;" onclick="addToCart(16814)" class="button button-small">+ 16814</a>
+                    <a href="https://my102.iit.edu/banr/bwckschd.p_disp_detail_sched?term_in=201710&amp;crn_in=16814" target="_blank" class="button button-small" title="View detailed section information">Section info</a>
+                  </td>
+                  <td class="type">Class: Lecture/Lab</td>
+                  <td class="time">R 6:00 pm - 9:30 pm</td>
+                  <td class="location">TBA</td>
+                  <td class="instructors">Witt Hawkins</td>
+                  <td class="enrollment"><strong>7</strong>/26</td>
+                  <td class="waitlist">0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <footer>
+            <a class="button button-small" href="https://my102.iit.edu/banr/bwckctlg.p_disp_course_detail?cat_term_in=201710&amp;subj_code_in=ITM&amp;crse_numb_in=312" target="_blank" title="Opens in a new window">View in course catalog</a>
+            <a class="button button-small" href="javascript:;" onclick="$(this).parents('div.course').find('form').submit()">View course evaluations</a>
+            <form action="http://retention.iit.edu/course_eval_summary_result.php" method="post" target="_blank"><input type="hidden" name="course[]" value="ITM312"><input type="hidden" name="instructor[]" value="BLANK"></form>
+          </footer>
+        </article>
+        <article class="course">
+          <header>
+            <h3>ITMD 569: Topics in Application Development</h3>
+          </header>
+          <div class="course-info">
+            <p>This course will cover a particular topic in application development, varying from semester to semester, in which there is a particular student or staff interest. This course may be taken more than once but only 9 hours of ITM 469/569 or ITMD 469/569 credit may be applied to a degree.</p>
+            <ul class="tags">
+              <li>1 to 6 credit(s)</li>
+              <li>Standard Tuition Rate</li>
+            </ul>
 
-          <table class="sections">
-            <caption>Sections (Fall 2016)</caption>
-            <thead>
-              <tr>
-                <th class="crn">CRN</th>
-                <th class="type">Type</th>
-                <th class="time">Time</th>
-                <th class="location">Location</th>
-                <th class="instructors">Instructor(s)</th>
-                <th class="enrollment">Enrolled</th>
-                <th class="waitlist">Waitlisted</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="section" id="section17906">
-                <td class="crn">
-                  <a href="javascript:;" onclick="addToCart(17906)" class="button button-small">+ 17906</a>
-                  <a href="https://my102.iit.edu/banr/bwckschd.p_disp_detail_sched?term_in=201710&amp;crn_in=17906" target="_blank" class="button button-small" title="View detailed section information">Section info</a>
-                </td>
-                <td class="type">Class: Lecture</td>
-                <td class="time">T 6:25 pm - 9:05 pm</td>
-                <td class="location">TBA</td>
-                <td class="instructors">Adarsh K. Arora</td>
-                <td class="enrollment"><strong>18</strong>/30</td>
-                <td class="waitlist">0</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <footer>
-          <a class="button button-small" href="https://my102.iit.edu/banr/bwckctlg.p_disp_course_detail?cat_term_in=201710&amp;subj_code_in=ITMM&amp;crse_numb_in=581" target="_blank" title="Opens in a new window">View in course catalog</a>
-          <a class="button button-small" href="javascript:;" onclick="$(this).parents('div.course').find('form').submit()">View course evaluations</a>
-          <form action="http://retention.iit.edu/course_eval_summary_result.php" method="post" target="_blank"><input type="hidden" name="course[]" value="ITMM581"><input type="hidden" name="instructor[]" value="BLANK"></form>
-        </footer>
-      </article>
-      <article class="course">
-        <header>
-          <h4>ITM 312: Introduction to Systems Software Programming</h4>
-        </header>
-        <div class="course-info">
-          <p>Introduces basic concepts of systems programming. Students learn to apply basic programming concepts toward solving problems, create source files and implement header files, work with and effectively use basic data types, abstract data types, control structures, code modularization and arrays. Students will be introduced to object paradigm including, classes, inheritance, and polymorphism applications.</p>
-          <ul class="tags">
-            <li>3 credit(s)</li>
-            <li>Standard Tuition Rate</li>
-          </ul>
+            <table class="sections">
+              <caption>Sections (Fall 2016)</caption>
+              <thead>
+                <tr>
+                  <th class="crn">CRN</th>
+                  <th class="type">Type</th>
+                  <th class="time">Time</th>
+                  <th class="location">Location</th>
+                  <th class="instructors">Instructor(s)</th>
+                  <th class="enrollment">Enrolled</th>
+                  <th class="waitlist">Waitlisted</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="section" id="section19560">
+                  <td class="crn">
+                    <a href="javascript:;" onclick="addToCart(19560)" class="button button-small">+ 19560</a>
+                    <a href="https://my102.iit.edu/banr/bwckschd.p_disp_detail_sched?term_in=201710&amp;crn_in=19560" target="_blank" class="button button-small" title="View detailed section information">Section info</a>
+                  </td>
+                  <td class="type">Class: Lecture</td>
+                  <td class="time">T 6:25 pm - 9:05 pm</td>
+                  <td class="location">TBA</td>
+                  <td class="instructors">Daniel J. Krieglstein</td>
+                  <td class="enrollment"><strong>3</strong>/15</td>
+                  <td class="waitlist">0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <footer>
+            <a class="button button-small" href="https://my102.iit.edu/banr/bwckctlg.p_disp_course_detail?cat_term_in=201710&amp;subj_code_in=ITMD&amp;crse_numb_in=569" target="_blank" title="Opens in a new window">View in course catalog</a>
+            <a class="button button-small" href="javascript:;" onclick="$(this).parents('div.course').find('form').submit()">View course evaluations</a>
+            <form action="http://retention.iit.edu/course_eval_summary_result.php" method="post" target="_blank"><input type="hidden" name="course[]" value="ITMD569"><input type="hidden" name="instructor[]" value="BLANK"></form>
+          </footer>
+        </article>
+        <article class="course">
+          <header>
+            <h3>ITMT 593: Embedded Systems</h3>
+          </header>
+          <div class="course-info">
+            <p>This course introduces embedded systems concepts and technology, illustrates the trade-offs which occur as part of embedded systems design, as well as providing practical applications of embedded systems technology. Particular emphasis is given to embedded systems hardware, software and development tools. The course labs include hands-on development of several stand-alone embedded applications using development tools such as compilers, simulators and evaluation boards. Prerequisite: ITM 301 or equivalent computer architecture course; C/C++ programming experience.</p>
+            <ul class="tags">
+              <li>3 credit(s)</li>
+              <li>Standard Tuition Rate</li>
+            </ul>
 
-          <table class="sections">
-            <caption>Sections (Fall 2016)</caption>
-            <thead>
-              <tr>
-                <th class="crn">CRN</th>
-                <th class="type">Type</th>
-                <th class="time">Time</th>
-                <th class="location">Location</th>
-                <th class="instructors">Instructor(s)</th>
-                <th class="enrollment">Enrolled</th>
-                <th class="waitlist">Waitlisted</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="section" id="section16814">
-                <td class="crn">
-                  <a href="javascript:;" onclick="addToCart(16814)" class="button button-small">+ 16814</a>
-                  <a href="https://my102.iit.edu/banr/bwckschd.p_disp_detail_sched?term_in=201710&amp;crn_in=16814" target="_blank" class="button button-small" title="View detailed section information">Section info</a>
-                </td>
-                <td class="type">Class: Lecture/Lab</td>
-                <td class="time">R 6:00 pm - 9:30 pm</td>
-                <td class="location">TBA</td>
-                <td class="instructors">Witt Hawkins</td>
-                <td class="enrollment"><strong>7</strong>/26</td>
-                <td class="waitlist">0</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <footer>
-          <a class="button button-small" href="https://my102.iit.edu/banr/bwckctlg.p_disp_course_detail?cat_term_in=201710&amp;subj_code_in=ITM&amp;crse_numb_in=312" target="_blank" title="Opens in a new window">View in course catalog</a>
-          <a class="button button-small" href="javascript:;" onclick="$(this).parents('div.course').find('form').submit()">View course evaluations</a>
-          <form action="http://retention.iit.edu/course_eval_summary_result.php" method="post" target="_blank"><input type="hidden" name="course[]" value="ITM312"><input type="hidden" name="instructor[]" value="BLANK"></form>
-        </footer>
-      </article>
-      <article class="course">
-        <header>
-          <h4>ITMD 569: Topics in Application Development</h4>
-        </header>
-        <div class="course-info">
-          <p>This course will cover a particular topic in application development, varying from semester to semester, in which there is a particular student or staff interest. This course may be taken more than once but only 9 hours of ITM 469/569 or ITMD 469/569 credit may be applied to a degree.</p>
-          <ul class="tags">
-            <li>1 to 6 credit(s)</li>
-            <li>Standard Tuition Rate</li>
-          </ul>
+            <table class="sections">
+              <caption>Sections (Fall 2016)</caption>
+              <thead>
+                <tr>
+                  <th class="crn">CRN</th>
+                  <th class="type">Type</th>
+                  <th class="time">Time</th>
+                  <th class="location">Location</th>
+                  <th class="instructors">Instructor(s)</th>
+                  <th class="enrollment">Enrolled</th>
+                  <th class="waitlist">Waitlisted</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="section" id="section19283">
+                  <td class="crn">
+                    <a href="javascript:;" onclick="addToCart(19283)" class="button button-small">+ 19283</a>
+                    <a href="https://my102.iit.edu/banr/bwckschd.p_disp_detail_sched?term_in=201710&amp;crn_in=19283" target="_blank" class="button button-small" title="View detailed section information">Section info</a>
+                  </td>
+                  <td class="type">Class: Lecture/Lab</td>
+                  <td class="time">TR 3:15 pm - 4:55 pm</td>
+                  <td class="location">Tech Park - South Building 2030</td>
+                  <td class="instructors">Jeremy R. Hajek, Daniel Tomal</td>
+                  <td class="enrollment"><strong>0</strong>/12</td>
+                  <td class="waitlist">0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <footer>
+            <a class="button button-small" href="https://my102.iit.edu/banr/bwckctlg.p_disp_course_detail?cat_term_in=201710&amp;subj_code_in=ITMT&amp;crse_numb_in=593" target="_blank" title="Opens in a new window">View in course catalog</a>
+            <a class="button button-small" href="javascript:;" onclick="$(this).parents('div.course').find('form').submit()">View course evaluations</a>
+            <form action="http://retention.iit.edu/course_eval_summary_result.php" method="post" target="_blank"><input type="hidden" name="course[]" value="ITMT593"><input type="hidden" name="instructor[]" value="BLANK"></form>
+          </footer>
+        </article>
+        <article class="course">
+          <header>
+            <h3>ITM 311: Introduction to Software Development</h3>
+          </header>
+          <div class="course-info">
+            <p>A broad introduction to object-oriented programming and the related knowledge necessary to program in a contemporary programming language. This would include coverage of an Application Development Kit, a standard integrated Development environment, and the use of GUI components.</p>
+            <ul class="tags">
+              <li>3 credit(s)</li>
+              <li>Standard Tuition Rate</li>
+            </ul>
 
-          <table class="sections">
-            <caption>Sections (Fall 2016)</caption>
-            <thead>
-              <tr>
-                <th class="crn">CRN</th>
-                <th class="type">Type</th>
-                <th class="time">Time</th>
-                <th class="location">Location</th>
-                <th class="instructors">Instructor(s)</th>
-                <th class="enrollment">Enrolled</th>
-                <th class="waitlist">Waitlisted</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="section" id="section19560">
-                <td class="crn">
-                  <a href="javascript:;" onclick="addToCart(19560)" class="button button-small">+ 19560</a>
-                  <a href="https://my102.iit.edu/banr/bwckschd.p_disp_detail_sched?term_in=201710&amp;crn_in=19560" target="_blank" class="button button-small" title="View detailed section information">Section info</a>
-                </td>
-                <td class="type">Class: Lecture</td>
-                <td class="time">T 6:25 pm - 9:05 pm</td>
-                <td class="location">TBA</td>
-                <td class="instructors">Daniel J. Krieglstein</td>
-                <td class="enrollment"><strong>3</strong>/15</td>
-                <td class="waitlist">0</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <footer>
-          <a class="button button-small" href="https://my102.iit.edu/banr/bwckctlg.p_disp_course_detail?cat_term_in=201710&amp;subj_code_in=ITMD&amp;crse_numb_in=569" target="_blank" title="Opens in a new window">View in course catalog</a>
-          <a class="button button-small" href="javascript:;" onclick="$(this).parents('div.course').find('form').submit()">View course evaluations</a>
-          <form action="http://retention.iit.edu/course_eval_summary_result.php" method="post" target="_blank"><input type="hidden" name="course[]" value="ITMD569"><input type="hidden" name="instructor[]" value="BLANK"></form>
-        </footer>
-      </article>
-      <article class="course">
-        <header>
-          <h4>ITMT 593: Embedded Systems</h4>
-        </header>
-        <div class="course-info">
-          <p>This course introduces embedded systems concepts and technology, illustrates the trade-offs which occur as part of embedded systems design, as well as providing practical applications of embedded systems technology. Particular emphasis is given to embedded systems hardware, software and development tools. The course labs include hands-on development of several stand-alone embedded applications using development tools such as compilers, simulators and evaluation boards. Prerequisite: ITM 301 or equivalent computer architecture course; C/C++ programming experience.</p>
-          <ul class="tags">
-            <li>3 credit(s)</li>
-            <li>Standard Tuition Rate</li>
-          </ul>
+            <table class="sections">
+              <caption>Sections (Fall 2016)</caption>
+              <thead>
+                <tr>
+                  <th class="crn">CRN</th>
+                  <th class="type">Type</th>
+                  <th class="time">Time</th>
+                  <th class="location">Location</th>
+                  <th class="instructors">Instructor(s)</th>
+                  <th class="enrollment">Enrolled</th>
+                  <th class="waitlist">Waitlisted</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="section" id="section17913">
+                  <td class="crn">
+                    <a href="javascript:;" onclick="addToCart(17913)" class="button button-small">+ 17913</a>
+                    <a href="https://my102.iit.edu/banr/bwckschd.p_disp_detail_sched?term_in=201710&amp;crn_in=17913" target="_blank" class="button button-small" title="View detailed section information">Section info</a>
+                  </td>
+                  <td class="type">Class: Lecture/Lab</td>
+                  <td class="time">MW 3:15 pm - 4:55 pm</td>
+                  <td class="location">Tech Park - South Building 2033</td>
+                  <td class="instructors">Katherine Papademas</td>
+                  <td class="enrollment"><strong>1</strong>/20</td>
+                  <td class="waitlist">0</td>
+                </tr>
+                <tr class="section" id="section18409">
+                  <td class="crn">
+                    <a href="javascript:;" onclick="addToCart(18409)" class="button button-small">+ 18409</a>
+                    <a href="https://my102.iit.edu/banr/bwckschd.p_disp_detail_sched?term_in=201710&amp;crn_in=18409" target="_blank" class="button button-small" title="View detailed section information">Section info</a>
+                  </td>
+                  <td class="type">Class: Lecture/Lab</td>
+                  <td class="time">T 6:00 pm - 9:30 pm</td>
+                  <td class="location">TBA</td>
+                  <td class="instructors">Katherine Papademas</td>
+                  <td class="enrollment"><strong>4</strong>/20</td>
+                  <td class="waitlist">0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <footer>
+            <a class="button button-small" href="https://my102.iit.edu/banr/bwckctlg.p_disp_course_detail?cat_term_in=201710&amp;subj_code_in=ITM&amp;crse_numb_in=311" target="_blank" title="Opens in a new window">View in course catalog</a>
+            <a class="button button-small" href="javascript:;" onclick="$(this).parents('div.course').find('form').submit()">View course evaluations</a>
+            <form action="http://retention.iit.edu/course_eval_summary_result.php" method="post" target="_blank"><input type="hidden" name="course[]" value="ITM311"><input type="hidden" name="instructor[]" value="BLANK"></form>
+          </footer>
+        </article>
+        <article class="course">
+          <header>
+            <h3>ITM 301: Introduction to Contemporary Operating Systems and Hardware I</h3>
+          </header>
+          <div class="course-info">
+            <p>Students study the basics of computer architecture and learn to use a contemporary operating system. Hardware requirements, hardware components, software compatibility, and system installation topics are covered along with post-installation, storage, security and system diagnosis, and repair. Topics also include discussion of current and future technology industry trends.</p>
+            <ul class="tags">
+              <li>3 credit(s)</li>
+              <li>Standard Tuition Rate</li>
+            </ul>
 
-          <table class="sections">
-            <caption>Sections (Fall 2016)</caption>
-            <thead>
-              <tr>
-                <th class="crn">CRN</th>
-                <th class="type">Type</th>
-                <th class="time">Time</th>
-                <th class="location">Location</th>
-                <th class="instructors">Instructor(s)</th>
-                <th class="enrollment">Enrolled</th>
-                <th class="waitlist">Waitlisted</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="section" id="section19283">
-                <td class="crn">
-                  <a href="javascript:;" onclick="addToCart(19283)" class="button button-small">+ 19283</a>
-                  <a href="https://my102.iit.edu/banr/bwckschd.p_disp_detail_sched?term_in=201710&amp;crn_in=19283" target="_blank" class="button button-small" title="View detailed section information">Section info</a>
-                </td>
-                <td class="type">Class: Lecture/Lab</td>
-                <td class="time">TR 3:15 pm - 4:55 pm</td>
-                <td class="location">Tech Park - South Building 2030</td>
-                <td class="instructors">Jeremy R. Hajek, Daniel Tomal</td>
-                <td class="enrollment"><strong>0</strong>/12</td>
-                <td class="waitlist">0</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <footer>
-          <a class="button button-small" href="https://my102.iit.edu/banr/bwckctlg.p_disp_course_detail?cat_term_in=201710&amp;subj_code_in=ITMT&amp;crse_numb_in=593" target="_blank" title="Opens in a new window">View in course catalog</a>
-          <a class="button button-small" href="javascript:;" onclick="$(this).parents('div.course').find('form').submit()">View course evaluations</a>
-          <form action="http://retention.iit.edu/course_eval_summary_result.php" method="post" target="_blank"><input type="hidden" name="course[]" value="ITMT593"><input type="hidden" name="instructor[]" value="BLANK"></form>
-        </footer>
-      </article>
-      <article class="course">
-        <header>
-          <h4>ITM 311: Introduction to Software Development</h4>
-        </header>
-        <div class="course-info">
-          <p>A broad introduction to object-oriented programming and the related knowledge necessary to program in a contemporary programming language. This would include coverage of an Application Development Kit, a standard integrated Development environment, and the use of GUI components.</p>
-          <ul class="tags">
-            <li>3 credit(s)</li>
-            <li>Standard Tuition Rate</li>
-          </ul>
+            <table class="sections">
+              <caption>Sections (Fall 2016)</caption>
+              <thead>
+                <tr>
+                  <th class="crn">CRN</th>
+                  <th class="type">Type</th>
+                  <th class="time">Time</th>
+                  <th class="location">Location</th>
+                  <th class="instructors">Instructor(s)</th>
+                  <th class="enrollment">Enrolled</th>
+                  <th class="waitlist">Waitlisted</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="section" id="section13174">
+                  <td class="crn">
+                    <a href="javascript:;" onclick="addToCart(13174)" class="button button-small">+ 13174</a>
+                    <a href="https://my102.iit.edu/banr/bwckschd.p_disp_detail_sched?term_in=201710&amp;crn_in=13174" target="_blank" class="button button-small" title="View detailed section information">Section info</a>
+                  </td>
+                  <td class="type">Class: Lecture/Lab</td>
+                  <td class="time">M 6:00 pm - 9:30 pm</td>
+                  <td class="location">Tech Park - South Building 2033</td>
+                  <td class="instructors">Vasilios Pappademetriou</td>
+                  <td class="enrollment"><strong>8</strong>/22</td>
+                  <td class="waitlist">0</td>
+                </tr>
+                <tr class="section" id="section16813">
+                  <td class="crn">
+                    <a href="javascript:;" onclick="addToCart(16813)" class="button button-small">+ 16813</a>
+                    <a href="https://my102.iit.edu/banr/bwckschd.p_disp_detail_sched?term_in=201710&amp;crn_in=16813" target="_blank" class="button button-small" title="View detailed section information">Section info</a>
+                  </td>
+                  <td class="type">Class: Lecture/Lab</td>
+                  <td class="time">W 6:00 pm - 9:30 pm</td>
+                  <td class="location">Tech Park - South Building 2033</td>
+                  <td class="instructors">Vasilios Pappademetriou</td>
+                  <td class="enrollment"><strong>5</strong>/22</td>
+                  <td class="waitlist">0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <footer>
+            <a class="button button-small" href="https://my102.iit.edu/banr/bwckctlg.p_disp_course_detail?cat_term_in=201710&amp;subj_code_in=ITM&amp;crse_numb_in=301" target="_blank" title="Opens in a new window">View in course catalog</a>
+            <a class="button button-small" href="javascript:;" onclick="$(this).parents('div.course').find('form').submit()">View course evaluations</a>
+            <form action="http://retention.iit.edu/course_eval_summary_result.php" method="post" target="_blank"><input type="hidden" name="course[]" value="ITM301"><input type="hidden" name="instructor[]" value="BLANK"></form>
+          </footer>
+        </article>
+        <article class="course">
+          <header>
+            <h3>ITMD 555: Open-Source Intelligent Device Applications</h3>
+          </header>
+          <div class="course-info">
+            <p>Intelligent device application development is covered with various technologies on mobile and robotic platforms. Utilizing contemporary toolkits, the student considers design and development on emulated and real "smart" devices including smart phones, personal digital assistants, sensors, actuators, and robots. Numerous exercises reinforce concepts gained throughout the course. A term project will integrate course topics into a comprehensive intelligent device application. This course may be taken more than once but only 9 hours of ITM 455/555 or ITMD 455/555 credit may be applied to a degree.</p>
+            <ul class="tags">
+              <li>3 credit(s)</li>
+              <li>Standard Tuition Rate</li>
+            </ul>
 
-          <table class="sections">
-            <caption>Sections (Fall 2016)</caption>
-            <thead>
-              <tr>
-                <th class="crn">CRN</th>
-                <th class="type">Type</th>
-                <th class="time">Time</th>
-                <th class="location">Location</th>
-                <th class="instructors">Instructor(s)</th>
-                <th class="enrollment">Enrolled</th>
-                <th class="waitlist">Waitlisted</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="section" id="section17913">
-                <td class="crn">
-                  <a href="javascript:;" onclick="addToCart(17913)" class="button button-small">+ 17913</a>
-                  <a href="https://my102.iit.edu/banr/bwckschd.p_disp_detail_sched?term_in=201710&amp;crn_in=17913" target="_blank" class="button button-small" title="View detailed section information">Section info</a>
-                </td>
-                <td class="type">Class: Lecture/Lab</td>
-                <td class="time">MW 3:15 pm - 4:55 pm</td>
-                <td class="location">Tech Park - South Building 2033</td>
-                <td class="instructors">Katherine Papademas</td>
-                <td class="enrollment"><strong>1</strong>/20</td>
-                <td class="waitlist">0</td>
-              </tr>
-              <tr class="section" id="section18409">
-                <td class="crn">
-                  <a href="javascript:;" onclick="addToCart(18409)" class="button button-small">+ 18409</a>
-                  <a href="https://my102.iit.edu/banr/bwckschd.p_disp_detail_sched?term_in=201710&amp;crn_in=18409" target="_blank" class="button button-small" title="View detailed section information">Section info</a>
-                </td>
-                <td class="type">Class: Lecture/Lab</td>
-                <td class="time">T 6:00 pm - 9:30 pm</td>
-                <td class="location">TBA</td>
-                <td class="instructors">Katherine Papademas</td>
-                <td class="enrollment"><strong>4</strong>/20</td>
-                <td class="waitlist">0</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <footer>
-          <a class="button button-small" href="https://my102.iit.edu/banr/bwckctlg.p_disp_course_detail?cat_term_in=201710&amp;subj_code_in=ITM&amp;crse_numb_in=311" target="_blank" title="Opens in a new window">View in course catalog</a>
-          <a class="button button-small" href="javascript:;" onclick="$(this).parents('div.course').find('form').submit()">View course evaluations</a>
-          <form action="http://retention.iit.edu/course_eval_summary_result.php" method="post" target="_blank"><input type="hidden" name="course[]" value="ITM311"><input type="hidden" name="instructor[]" value="BLANK"></form>
-        </footer>
-      </article>
-      <article class="course">
-        <header>
-          <h4>ITM 301: Introduction to Contemporary Operating Systems and Hardware I</h4>
-        </header>
-        <div class="course-info">
-          <p>Students study the basics of computer architecture and learn to use a contemporary operating system. Hardware requirements, hardware components, software compatibility, and system installation topics are covered along with post-installation, storage, security and system diagnosis, and repair. Topics also include discussion of current and future technology industry trends.</p>
-          <ul class="tags">
-            <li>3 credit(s)</li>
-            <li>Standard Tuition Rate</li>
-          </ul>
-
-          <table class="sections">
-            <caption>Sections (Fall 2016)</caption>
-            <thead>
-              <tr>
-                <th class="crn">CRN</th>
-                <th class="type">Type</th>
-                <th class="time">Time</th>
-                <th class="location">Location</th>
-                <th class="instructors">Instructor(s)</th>
-                <th class="enrollment">Enrolled</th>
-                <th class="waitlist">Waitlisted</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="section" id="section13174">
-                <td class="crn">
-                  <a href="javascript:;" onclick="addToCart(13174)" class="button button-small">+ 13174</a>
-                  <a href="https://my102.iit.edu/banr/bwckschd.p_disp_detail_sched?term_in=201710&amp;crn_in=13174" target="_blank" class="button button-small" title="View detailed section information">Section info</a>
-                </td>
-                <td class="type">Class: Lecture/Lab</td>
-                <td class="time">M 6:00 pm - 9:30 pm</td>
-                <td class="location">Tech Park - South Building 2033</td>
-                <td class="instructors">Vasilios Pappademetriou</td>
-                <td class="enrollment"><strong>8</strong>/22</td>
-                <td class="waitlist">0</td>
-              </tr>
-              <tr class="section" id="section16813">
-                <td class="crn">
-                  <a href="javascript:;" onclick="addToCart(16813)" class="button button-small">+ 16813</a>
-                  <a href="https://my102.iit.edu/banr/bwckschd.p_disp_detail_sched?term_in=201710&amp;crn_in=16813" target="_blank" class="button button-small" title="View detailed section information">Section info</a>
-                </td>
-                <td class="type">Class: Lecture/Lab</td>
-                <td class="time">W 6:00 pm - 9:30 pm</td>
-                <td class="location">Tech Park - South Building 2033</td>
-                <td class="instructors">Vasilios Pappademetriou</td>
-                <td class="enrollment"><strong>5</strong>/22</td>
-                <td class="waitlist">0</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <footer>
-          <a class="button button-small" href="https://my102.iit.edu/banr/bwckctlg.p_disp_course_detail?cat_term_in=201710&amp;subj_code_in=ITM&amp;crse_numb_in=301" target="_blank" title="Opens in a new window">View in course catalog</a>
-          <a class="button button-small" href="javascript:;" onclick="$(this).parents('div.course').find('form').submit()">View course evaluations</a>
-          <form action="http://retention.iit.edu/course_eval_summary_result.php" method="post" target="_blank"><input type="hidden" name="course[]" value="ITM301"><input type="hidden" name="instructor[]" value="BLANK"></form>
-        </footer>
-      </article>
-      <article class="course">
-        <header>
-          <h4>ITMD 555: Open-Source Intelligent Device Applications</h4>
-        </header>
-        <div class="course-info">
-          <p>Intelligent device application development is covered with various technologies on mobile and robotic platforms. Utilizing contemporary toolkits, the student considers design and development on emulated and real "smart" devices including smart phones, personal digital assistants, sensors, actuators, and robots. Numerous exercises reinforce concepts gained throughout the course. A term project will integrate course topics into a comprehensive intelligent device application. This course may be taken more than once but only 9 hours of ITM 455/555 or ITMD 455/555 credit may be applied to a degree.</p>
-          <ul class="tags">
-            <li>3 credit(s)</li>
-            <li>Standard Tuition Rate</li>
-          </ul>
-
-          <table class="sections">
-            <caption>Sections (Fall 2016)</caption>
-            <thead>
-              <tr>
-                <th class="crn">CRN</th>
-                <th class="type">Type</th>
-                <th class="time">Time</th>
-                <th class="location">Location</th>
-                <th class="instructors">Instructor(s)</th>
-                <th class="enrollment">Enrolled</th>
-                <th class="waitlist">Waitlisted</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="section" id="section17710">
-                <td class="crn">
-                  <a href="javascript:;" onclick="addToCart(17710)" class="button button-small">+ 17710</a>
-                  <a href="https://my102.iit.edu/banr/bwckschd.p_disp_detail_sched?term_in=201710&amp;crn_in=17710" target="_blank" class="button button-small" title="View detailed section information">Section info</a>
-                </td>
-                <td class="type">Class: Lecture/Lab</td>
-                <td class="time">M 6:25 pm - 9:05 pm</td>
-                <td class="location">TBA</td>
-                <td class="instructors">Peisong Huang</td>
-                <td class="enrollment"><strong>14</strong>/20</td>
-                <td class="waitlist">0</td>
-              </tr>
-              <tr class="section" id="section18380">
-                <td class="crn">
-                  <a href="javascript:;" onclick="addToCart(18380)" class="button button-small">+ 18380</a>
-                  <a href="https://my102.iit.edu/banr/bwckschd.p_disp_detail_sched?term_in=201710&amp;crn_in=18380" target="_blank" class="button button-small" title="View detailed section information">Section info</a>
-                </td>
-                <td class="type">Internet: Lecture/Lab</td>
-                <td class="time"> TBA</td>
-                <td class="location">TBA</td>
-                <td class="instructors">Peisong Huang</td>
-                <td class="enrollment"><strong>6</strong>/8</td>
-                <td class="waitlist">0</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <footer>
-          <a class="button button-small" href="https://my102.iit.edu/banr/bwckctlg.p_disp_course_detail?cat_term_in=201710&amp;subj_code_in=ITMD&amp;crse_numb_in=555" target="_blank" title="Opens in a new window">View in course catalog</a>
-          <a class="button button-small" href="javascript:;" onclick="$(this).parents('div.course').find('form').submit()">View course evaluations</a>
-          <form action="http://retention.iit.edu/course_eval_summary_result.php" method="post" target="_blank"><input type="hidden" name="course[]" value="ITMD555"><input type="hidden" name="instructor[]" value="BLANK"></form>
-        </footer>
-      </article>
-    </section>
-  </main>
-  <aside>
-    <div id="cart">
-      <h4>Cart</h4>
-      <ul>
-        <li>ITM 301: Introduction to Contemporary Operating Systems and Hardware I - 13174 <button type="button" class="close" aria-label="Close" onclick="removeFromCart(13174)"><span aria-hidden="true">&times;</span></button></li>
-        <li>ITMD 555: Open-Source Intelligent Device Applications - 17710 <button type="button" class="close" aria-label="Close" onclick="removeFromCart(17710)"><span aria-hidden="true">&times;</span></button></li>
-        <li>ITMM 581: Information Technology Entrepreneurship - 17906 <button type="button" class="close" aria-label="Close" onclick="removeFromCart(17906)"><span aria-hidden="true">&times;</span></button></li>
-        <li>ITM 312: Introduction to Systems Software Programming - 16814 <button type="button" class="close" aria-label="Close" onclick="removeFromCart(16814)"><span aria-hidden="true">&times;</span></button></li>
-      </ul>
-    </div>
-    <div class="schedule-container">
-      <h4>Your Schedule</h4>
-      <div id="schedule"></div>
-    </div>
-    <div id="semesters">
-      <!-- switch between semesters here -->
-    </div>
-  </aside>
-
+            <table class="sections">
+              <caption>Sections (Fall 2016)</caption>
+              <thead>
+                <tr>
+                  <th class="crn">CRN</th>
+                  <th class="type">Type</th>
+                  <th class="time">Time</th>
+                  <th class="location">Location</th>
+                  <th class="instructors">Instructor(s)</th>
+                  <th class="enrollment">Enrolled</th>
+                  <th class="waitlist">Waitlisted</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="section" id="section17710">
+                  <td class="crn">
+                    <a href="javascript:;" onclick="addToCart(17710)" class="button button-small">+ 17710</a>
+                    <a href="https://my102.iit.edu/banr/bwckschd.p_disp_detail_sched?term_in=201710&amp;crn_in=17710" target="_blank" class="button button-small" title="View detailed section information">Section info</a>
+                  </td>
+                  <td class="type">Class: Lecture/Lab</td>
+                  <td class="time">M 6:25 pm - 9:05 pm</td>
+                  <td class="location">TBA</td>
+                  <td class="instructors">Peisong Huang</td>
+                  <td class="enrollment"><strong>14</strong>/20</td>
+                  <td class="waitlist">0</td>
+                </tr>
+                <tr class="section" id="section18380">
+                  <td class="crn">
+                    <a href="javascript:;" onclick="addToCart(18380)" class="button button-small">+ 18380</a>
+                    <a href="https://my102.iit.edu/banr/bwckschd.p_disp_detail_sched?term_in=201710&amp;crn_in=18380" target="_blank" class="button button-small" title="View detailed section information">Section info</a>
+                  </td>
+                  <td class="type">Internet: Lecture/Lab</td>
+                  <td class="time"> TBA</td>
+                  <td class="location">TBA</td>
+                  <td class="instructors">Peisong Huang</td>
+                  <td class="enrollment"><strong>6</strong>/8</td>
+                  <td class="waitlist">0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <footer>
+            <a class="button button-small" href="https://my102.iit.edu/banr/bwckctlg.p_disp_course_detail?cat_term_in=201710&amp;subj_code_in=ITMD&amp;crse_numb_in=555" target="_blank" title="Opens in a new window">View in course catalog</a>
+            <a class="button button-small" href="javascript:;" onclick="$(this).parents('div.course').find('form').submit()">View course evaluations</a>
+            <form action="http://retention.iit.edu/course_eval_summary_result.php" method="post" target="_blank"><input type="hidden" name="course[]" value="ITMD555"><input type="hidden" name="instructor[]" value="BLANK"></form>
+          </footer>
+        </article>
+      </section>
+    </main>
+    <aside>
+      <div id="cart">
+        <h3>Cart</h3>
+        <ul>
+          <li><button type="button" class="close" aria-label="Close" onclick="removeFromCart(13174)"><span aria-hidden="true">&times;</span></button>ITM 301: Introduction to Contemporary Operating Systems and Hardware I - 13174</li>
+          <li><button type="button" class="close" aria-label="Close" onclick="removeFromCart(17710)"><span aria-hidden="true">&times;</span></button>ITMD 555: Open-Source Intelligent Device Applications - 17710</li>
+          <li><button type="button" class="close" aria-label="Close" onclick="removeFromCart(17906)"><span aria-hidden="true">&times;</span></button>ITMM 581: Information Technology Entrepreneurship - 17906</li>
+          <li><button type="button" class="close" aria-label="Close" onclick="removeFromCart(16814)"><span aria-hidden="true">&times;</span></button>ITM 312: Introduction to Systems Software Programming - 16814</li>
+        </ul>
+      </div>
+      <div class="schedule-container">
+        <h3>Your Schedule</h3>
+        <div id="schedule"></div>
+      </div>
+      <div id="semesters">
+        <!-- switch between semesters here -->
+      </div>
+    </aside>
+  </div>
   <footer>
   </footer>
 
