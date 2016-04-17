@@ -16,6 +16,31 @@ main {
   margin: 0 auto;
 }
 
+header h1 {
+  font-size: 3em;
+}
+
+form {
+  margin-top: 2em;
+}
+
+.content-wrapper {
+	font-size: 1.1em;
+	font-weight: 600;
+	line-height: 120%;
+  	background-color: #FBF9F5;
+  	display: block;
+  	width: 85%;
+	border: 0.15em solid #232323;
+	-webkit-border-radius: 0.3em;
+    border-radius: 0.3em;
+	padding: 1em;
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 /* LOGIN-SPECIFIC STYLES START */
 
 .login {
@@ -161,6 +186,13 @@ main {
   font-weight: bold;
   font-style: italic;
 }
+
+#news {
+  display: block;
+  text-align: center;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
+}
 /* INDEX-SPECIFIC STYLES END */
 
 /* COURSE SEARCH SPECIFIC STYLES START */
@@ -172,17 +204,14 @@ main {
 }
 .options {
   float: left;
-
   width: 33%;
 }
 /* COURSE SEARCH SPECIFIC STYLES END */
 
 /* MEDIA QUERIES START */
-
 @media screen and (min-width: 48em) {
   .navbar {
     display: flex;
   }
 }
-
 /* MEDIA QUERIES END */
