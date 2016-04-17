@@ -16,14 +16,6 @@ main {
   margin: 0 auto;
 }
 
-header h1 {
-  font-size: 3em;
-}
-
-form {
-  margin-top: 2em;
-}
-
 /* LOGIN-SPECIFIC STYLES START */
 
 .login {
@@ -36,8 +28,16 @@ form {
   border: 1em solid #dc002a; /* Hawk Red */
 }
 
+.login .page-greeting {
+  font-size: 3em;
+}
+
 .login > main {
   text-align: center;
+}
+
+.login form {
+  margin-top: 2em;
 }
 
 .login input {
@@ -157,6 +157,7 @@ form {
 
 .greeting {
   font-weight: bold;
+  margin: 1em 0;
 }
 /* INDEX-SPECIFIC STYLES END */
 
