@@ -18,13 +18,11 @@
 
     <main>
       <img class="logo" src="img/IITScarletHawks.png" alt="IIT Logo">
-      <form action="index.html">
+      <!-- We would use POST but we want the login button to go to the index page -->
+      <form action="index.html" method="get">
         <input type="text" placeholder="Username" id="username" name="username" title="IIT username" required>
-        <input type="password" placeholder="Password" pattern="\w{8,}" title="Password must be 8 or more characters" required>
-
-        <!-- <input type="checkbox" id="chk" name="chk" value="0" checked> -->
-        <!-- <label for="chk"> Remember login details?</label> -->
-        <input type="submit" id="submit" name="submit" value="Login"/>
+        <input type="password" placeholder="Password" id="password" name="password" pattern="\w{8,}" title="Password must be 8 or more characters" required>
+        <input type="submit" id="submit" name="submit" value="Login">
       </form>
     </main>
   </body>
