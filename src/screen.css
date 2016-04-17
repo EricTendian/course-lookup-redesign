@@ -6,8 +6,6 @@ body {
 }
 
 body > header {
-  padding-top: 2em;
-  padding-bottom: 2em;
   text-align: center;
 }
 
@@ -20,25 +18,9 @@ header h1 {
   font-size: 3em;
 }
 
-form {
-  margin-top: 2em;
-}
-
-.content-wrapper {
-	font-size: 1.1em;
-	font-weight: 600;
-	line-height: 120%;
-  	background-color: #FBF9F5;
-  	display: block;
-  	width: 85%;
-	border: 0.15em solid #232323;
-	-webkit-border-radius: 0.3em;
-    border-radius: 0.3em;
-	padding: 1em;
-	margin-top: 1em;
-	margin-bottom: 1.5em;
-	margin-right: auto;
-	margin-left: auto;
+.container {
+  max-width: 95%;
+  margin: 1em auto;
 }
 
 /* LOGIN-SPECIFIC STYLES START */
@@ -110,8 +92,6 @@ form {
 }
 
 .banner {
-  margin-top: -2em; /* Banner now touches top of viewport */
-
   text-align: left;
 
   background: url(img/headerExtender.gif);
@@ -196,15 +176,60 @@ form {
 /* INDEX-SPECIFIC STYLES END */
 
 /* COURSE SEARCH SPECIFIC STYLES START */
-#search-form label {
+#search-form {
+  background-color: #eee;
+  padding: 1em;
+  border: 0.1em solid #000;
+}
+#search,
+#search + button {
+  display: block;
+  float: left;
+  padding: 0.25em;
+  margin-bottom: 1em;
+}
+input#search {
+  width: 93%;
+}
+#search + button {
+  width: 5%;
+}
+#search-options {
+  display: flex;
+  clear: both;
+}
+.options {
+  flex: 1;
+  font-size: 0.8em;
+}
+.options label {
   display: block;
 }
+
 #search-results {
   font-size: 0.8em;
 }
-.options {
+
+.course-lookup-page main {
+  width: 60%;
   float: left;
-  width: 33%;
+  margin-right: 1em;
+}
+
+.course-lookup-page aside {
+  float: left;
+  width: 38%;
+}
+
+#cart ul {
+  font-size: 0.8em;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#cart button.close {
+  margin: 0.5em;
 }
 /* COURSE SEARCH SPECIFIC STYLES END */
 
