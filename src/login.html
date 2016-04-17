@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <title>Login</title>
+    <title>Login - MyIIT</title>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="img/myiit.gif">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
@@ -11,21 +11,18 @@
     <link href='https://fonts.googleapis.com/css?family=Droid+Sans:700,400' rel='stylesheet' type='text/css'>
   </head>
 
-  <body>
-    <body id="login">
+  <body class="login">
     <header>
-      <h1>Welcome.</h1>
+      <h1 class="page-greeting">Welcome.</h1>
     </header>
 
     <main>
       <img class="logo" src="img/IITScarletHawks.png" alt="IIT Logo">
-      <form action="#">
+      <!-- We would use POST but we want the login button to go to the index page -->
+      <form action="index.html" method="get">
         <input type="text" placeholder="Username" id="username" name="username" title="IIT username" required>
-        <input type="password" placeholder="Password" pattern="\w{8,}" title="Password must be 8 or more characters" required>
-
-        <!-- <input type="checkbox" id="chk" name="chk" value="0" checked> -->
-        <!-- <label for="chk"> Remember login details?</label> -->
-        <input type="submit" id="submit" name="submit" value="Login"/>
+        <input type="password" placeholder="Password" id="password" name="password" pattern="\w{8,}" title="Password must be 8 or more characters" required>
+        <input type="submit" id="submit" name="submit" value="Login">
       </form>
     </main>
   </body>
