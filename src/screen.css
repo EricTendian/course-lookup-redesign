@@ -103,6 +103,8 @@ table {
 }
 
 .banner {
+  width: 100%;
+  overflow: hidden;
   text-align: left;
 
   background: url(img/headerExtender.gif);
@@ -177,6 +179,11 @@ table {
   text-align: center;
   margin-top: 1.2em;
   margin-bottom: 1.2em;
+}
+
+.kaplan {
+  width: 100%;
+  height: auto;
 }
 /* INDEX-SPECIFIC STYLES END */
 
