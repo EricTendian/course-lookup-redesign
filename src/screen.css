@@ -148,17 +148,11 @@ table {
 }
 
 .navbar .nav a:hover,
-.navbar .nav a:active {
-  background-color: #42bcff;
+.navbar .nav a:active,
+.navbar .nav.active a {
+  background-color: #eee;
+  color: #222;
 }
-
-.navbar .nav .active {
-  cursor: default;
-
-  color: #444;
-  background-color: #fff;
-}
-
 
 .nav-logo {
   margin: 0 1em;
