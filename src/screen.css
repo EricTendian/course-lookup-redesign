@@ -23,6 +23,11 @@ header h1 {
   margin: 1em auto;
 }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 /* LOGIN-SPECIFIC STYLES START */
 
 .login {
@@ -180,34 +185,120 @@ header h1 {
   background-color: #eee;
   padding: 1em;
   border: 0.1em solid #000;
+  border-radius: 0.4em;
 }
-#search,
-#search + button {
-  display: block;
-  float: left;
-  padding: 0.25em;
+#search {
+  width: 100%;
+  padding: 0.25em 0;
   margin-bottom: 1em;
 }
-input#search {
-  width: 93%;
-}
-#search + button {
-  width: 5%;
-}
 #search-options {
-  display: flex;
   clear: both;
 }
 .options {
-  flex: 1;
   font-size: 0.8em;
+  margin-bottom: 1em;
 }
 .options label {
   display: block;
+  margin-top: 0.5em;
 }
 
-#search-results {
+article.course {
+  border: 1px solid #ccc;
+  margin-top: 1.5em;
+  border-radius: 0.4em;
+  background-color: #fff;
+}
+
+article.course header,
+article.course footer {
+  background-color: #eee;
+  padding: 0.5em;
+}
+
+article.course header {
+  border-bottom: 0.1em solid #ccc;
+  border-top-left-radius: 0.4em;
+  border-top-right-radius: 0.4em;
+}
+
+article.course header h3 {
+  margin: 0;
+  text-align: center;
+  font-size: 1em;
+}
+
+article.course .course-info {
   font-size: 0.8em;
+  line-height: 1.5;
+  padding: 0 1em;
+}
+
+.tags {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tags li {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  margin-right: 0.5em;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 0.4em;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  background: #fff;
+  border: 0.1em solid #000;
+  border-radius: 0.4em;
+  color: #000;
+  text-decoration: none;
+}
+
+.button.button-small {
+  font-size: 0.9em;
+}
+
+.sections {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.sections caption {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.sections td,
+.sections th {
+  padding: 0.5em 0.75em;
+}
+
+.sections th {
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.25em;
+}
+
+.sections .crn,
+.sections .time {
+  white-space: nowrap;
+  min-width: 10em;
+}
+
+.location, .waitlist {
+  display: none;
+}
+
+article.course footer {
+  border-top: 0.1em solid #ccc;
+  border-bottom-left-radius: 0.4em;
+  border-bottom-right-radius: 0.4em;
 }
 
 #cart ul {
@@ -223,20 +314,38 @@ input#search {
 /* COURSE SEARCH SPECIFIC STYLES END */
 
 /* MEDIA QUERIES START */
-@media screen and (min-width: 48em) {
-  .navbar {
-    display: flex;
+@media screen and (min-width: 80em) {
+  .waitlist {
+    display: table-cell;
   }
-  
+}
+
+@media screen and (min-width: 60em) {
   .course-lookup-page main {
-    width: 60%;
+    width: 70%;
     float: left;
     margin-right: 1em;
   }
 
   .course-lookup-page aside {
     float: left;
-    width: 37%;
+    width: 27%;
+  }
+  .location {
+    display: table-cell;
+  }
+}
+@media screen and (min-width: 48em) {
+  .navbar {
+    display: flex;
+  }
+}
+@media screen and (min-width: 32em) {
+  #search-options {
+    display: flex;
+  }
+  .options {
+    flex: 1;
   }
 }
 /* MEDIA QUERIES END */
