@@ -1,4 +1,6 @@
 /*csslint box-sizing: false*/
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
 body {
   font-family: 'Droid Sans', sans-serif;
   margin: 0;
