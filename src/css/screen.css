@@ -108,11 +108,28 @@ table {
 
 .globalFooter {
   text-align: right;
-  padding-top: 3em;
+  margin-top: 2em;
   font-size: 1.5em;
   color: #444;
   line-height: 0.5em;
+  border-top: 0.05em solid #dc002a;
 }
+
+.globalFooter .footerLogo {
+  float: right;
+}
+
+.globalFooter .footerLogo img {
+  display: block;
+  width: 2em;
+  margin-left: 1em;
+}
+
+.globalFooter .footerText {
+  margin-right: 2em;
+}
+
+
 /*
 ==========================================================================
 GLOBAL STYLES END
@@ -213,12 +230,12 @@ LOGIN-SPECIFIC STYLES END
 
 /*
 ==========================================================================
-INDEX-SPECIFIC STYLES START
+INDEX/ACADEMIC-SPECIFIC STYLES START
 ==========================================================================
 */
 .greeting {
   margin: 1em 0;
-
+  margin-top: 2em;
   font-weight: bold;
   font-style: italic;
 }
@@ -226,8 +243,8 @@ INDEX-SPECIFIC STYLES START
 .news {
   display: block;
   text-align: center;
-  margin-top: 1.2em;
-  margin-bottom: 1.2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .news header h3 {
@@ -252,18 +269,6 @@ INDEX-SPECIFIC STYLES START
   height: auto;
 }
 
-/*
-==========================================================================
-INDEX-SPECIFIC STYLES END
-==========================================================================
-*/
-
-
-/*
-==========================================================================
-ACADEMIC-SPECIFIC STYLES START
-==========================================================================
-*/
 .academics table {
   display: block;
   text-align: left;
@@ -303,7 +308,7 @@ ACADEMIC-SPECIFIC STYLES START
 }
 /*
 ==========================================================================
-ACADEMIC-SPECIFIC STYLES END
+INDEX/ACADEMIC-SPECIFIC STYLES END
 ==========================================================================
 */
 
