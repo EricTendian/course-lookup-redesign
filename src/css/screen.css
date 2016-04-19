@@ -113,6 +113,8 @@ table {
   color: #444;
   line-height: 0.5em;
   border-top: 0.05em solid #dc002a;
+  width: 85%;
+  margin-left: 7.5%;
 }
 
 .globalFooter .footerLogo {
