@@ -542,6 +542,19 @@ aside h3 {
 }
 /* COURSE SEARCH SPECIFIC STYLES END */
 
+/* ACADEMIC-SPECIFIC STYLES START */
+.academics table {
+  display: block;
+  text-align: left;
+}
+
+.academics table td:first-child {
+  font-weight: bold;
+  padding-right: 5em;
+}
+
+/* ACADEMIC-SPECIFIC STYLES END */
+
 /* MEDIA QUERIES START */
 @media screen and (min-width: 72em) {
   .course-lookup-page .container {
