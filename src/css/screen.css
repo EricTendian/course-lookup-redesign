@@ -542,6 +542,12 @@ aside h3 {
 }
 /* COURSE SEARCH SPECIFIC STYLES END */
 
+/* ACADEMIC-SPECIFIC STYLES START */
+.academics table {
+  
+}
+/* ACADEMIC-SPECIFIC STYLES END */
+
 /* MEDIA QUERIES START */
 @media screen and (min-width: 72em) {
   .course-lookup-page .container {
