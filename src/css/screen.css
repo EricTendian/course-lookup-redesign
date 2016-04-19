@@ -108,7 +108,7 @@ table {
 
 .globalFooter {
   text-align: right;
-  padding-top: 3em;
+  padding-top: 2em;
   font-size: 1.5em;
   color: #444;
   line-height: 0.5em;
@@ -213,7 +213,7 @@ LOGIN-SPECIFIC STYLES END
 
 /*
 ==========================================================================
-INDEX-SPECIFIC STYLES START
+INDEX/ACADEMIC-SPECIFIC STYLES START
 ==========================================================================
 */
 .greeting {
@@ -252,18 +252,6 @@ INDEX-SPECIFIC STYLES START
   height: auto;
 }
 
-/*
-==========================================================================
-INDEX-SPECIFIC STYLES END
-==========================================================================
-*/
-
-
-/*
-==========================================================================
-ACADEMIC-SPECIFIC STYLES START
-==========================================================================
-*/
 .academics table {
   display: block;
   text-align: left;
@@ -303,7 +291,7 @@ ACADEMIC-SPECIFIC STYLES START
 }
 /*
 ==========================================================================
-ACADEMIC-SPECIFIC STYLES END
+INDEX/ACADEMIC-SPECIFIC STYLES END
 ==========================================================================
 */
 
