@@ -546,6 +546,7 @@ aside h3 {
 .academics table {
   display: block;
   margin-left: 30%;
+  text-align: left;
 }
 /* ACADEMIC-SPECIFIC STYLES END */
 
