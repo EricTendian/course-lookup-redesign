@@ -109,7 +109,7 @@ table {
 .globalFooter {
   text-align: right;
   margin-top: 2em;
-  font-size: 1.5em;
+  font-size: 1em;
   color: #444;
   line-height: 0.5em;
   border-top: 0.05em solid #dc002a;
@@ -646,6 +646,7 @@ MEDIA QUERIES START
     width: 4em;
   }
 }
+
 @media screen and (min-width: 48em) {
   .navbar {
     display: flex;
@@ -654,15 +655,8 @@ MEDIA QUERIES START
   .calendar {
     display: block;
   }
-
-  .globalFooter {
-    font-size: 1.5em;
-  }
-  .globalFooter .footerLogo img {
-    width: 1.5em;
-  }
-
 }
+
 @media screen and (min-width: 32em) {
   #search-options {
     display: flex;
@@ -670,15 +664,8 @@ MEDIA QUERIES START
   .options {
     flex: 1;
   }
-  .globalFooter {
-    font-size: 1.2em;
-  }
-  .globalFooter .footerLogo img {
-    width: 1.2em;
-  }
 }
 
-}
 /*
 ==========================================================================
 MEDIA QUERIES END
