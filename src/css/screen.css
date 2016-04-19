@@ -71,6 +71,7 @@ table {
 .login input[type="text"],
 .login input[type="password"] {
   margin-bottom: 2em;
+  padding-left: 3em;
 
   border: none;
   border-bottom: thin solid black;
@@ -80,19 +81,19 @@ table {
 }
 
 .login input[type="text"] {
-  padding-left: 3em;
-
   background-image: url(../img/user.svg);
 }
 
 .login input[type="password"] {
-  padding-left: 3em;
-
   background-image: url(../img/key.svg);
 }
 
 .login input[type="submit"]:hover {
   color: grey;
+}
+
+.login input[type="submit"] {
+  margin-bottom: 1em;
 }
 
 .login label {
@@ -102,6 +103,17 @@ table {
 .login .logo {
   width: 20vh;
   height: auto;
+}
+
+.login .security {
+  text-align: center;
+  margin-left: 25%;
+  max-width: 50%;
+}
+
+.login .security img {
+  width: auto;
+  height: 1em;
 }
 
 /* LOGIN-SPECIFIC STYLES END */
