@@ -654,6 +654,14 @@ MEDIA QUERIES START
   .calendar {
     display: block;
   }
+
+  .globalFooter {
+    font-size: 1.5em;
+  }
+  .globalFooter .footerLogo img {
+    width: 1.5em;
+  }
+
 }
 @media screen and (min-width: 32em) {
   #search-options {
@@ -662,6 +670,14 @@ MEDIA QUERIES START
   .options {
     flex: 1;
   }
+  .globalFooter {
+    font-size: 1.2em;
+  }
+  .globalFooter .footerLogo img {
+    width: 1.2em;
+  }
+}
+
 }
 /*
 ==========================================================================
