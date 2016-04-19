@@ -1,4 +1,10 @@
-/* GLOBAL STYLES START */
+/*
+==========================================================================
+GLOBAL STYLES START 
+
+These are styles that are used on most or all pages
+==========================================================================
+*/
 
 /*csslint box-sizing: false*/
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
@@ -100,28 +106,6 @@ table {
   background-position: center;
 }
 
-/* Responsive iFrame */
-/* http://themeloom.com/2013/02/tips-embed-google-maps-and-calendars-in-a-responsive-wordpress-theme/ */ 
-.calendar {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-
-  /* Off by default, turned on by Media Query */
-  display: none;
-}
- 
-.calendar iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
 .globalFooter {
   text-align: right;
   padding-top: 3em;
@@ -129,10 +113,18 @@ table {
   color: #444;
   line-height: 0.5em;
 }
+/*
+==========================================================================
+GLOBAL STYLES END
+==========================================================================
+*/
 
-/* GLOBAL STYLES END */
 
-/* LOGIN-SPECIFIC STYLES START */
+/*
+==========================================================================
+LOGIN-SPECIFIC STYLES START
+==========================================================================
+*/
 
 .login {
   position: absolute;
@@ -212,9 +204,18 @@ table {
   height: 1em;
 }
 
-/* LOGIN-SPECIFIC STYLES END */
+/*
+==========================================================================
+LOGIN-SPECIFIC STYLES END
+==========================================================================
+*/
 
-/* INDEX-SPECIFIC STYLES START */
+
+/*
+==========================================================================
+INDEX-SPECIFIC STYLES START
+==========================================================================
+*/
 .greeting {
   margin: 1em 0;
 
@@ -251,9 +252,66 @@ table {
   height: auto;
 }
 
-/* INDEX-SPECIFIC STYLES END */
+/*
+==========================================================================
+INDEX-SPECIFIC STYLES END
+==========================================================================
+*/
 
-/* COURSE SEARCH SPECIFIC STYLES START */
+
+/*
+==========================================================================
+ACADEMIC-SPECIFIC STYLES START
+==========================================================================
+*/
+.academics table {
+  display: block;
+  text-align: left;
+}
+
+.academics table td:first-child {
+  font-weight: bold;
+  padding-right: 5em;
+}
+
+.academics tbody {
+  margin: auto;
+  width: 50%;
+  display: block;
+}
+
+/* Responsive iFrame */
+/* http://themeloom.com/2013/02/tips-embed-google-maps-and-calendars-in-a-responsive-wordpress-theme/ */ 
+.calendar {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+
+  /* Off by default, turned on by Media Query */
+  display: none;
+}
+ 
+.calendar iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+/*
+==========================================================================
+ACADEMIC-SPECIFIC STYLES END
+==========================================================================
+*/
+
+/*
+==========================================================================
+COURSE SEARCH SPECIFIC STYLES START
+==========================================================================
+*/
 .course-lookup-page .container > main {
   max-width: none;
 }
@@ -557,27 +615,17 @@ aside h3 {
   line-height: 0.75em;
   white-space: nowrap;
 }
-/* COURSE SEARCH SPECIFIC STYLES END */
+/*
+==========================================================================
+COURSE SEARCH SPECIFIC STYLES END
+==========================================================================
+*/
 
-/* ACADEMIC-SPECIFIC STYLES START */
-.academics table {
-  display: block;
-  text-align: left;
-}
-
-.academics table td:first-child {
-  font-weight: bold;
-  padding-right: 5em;
-}
-
-.academics tbody {
-  margin: auto;
-  width: 50%;
-  display: block;
-}
-/* ACADEMIC-SPECIFIC STYLES END */
-
-/* MEDIA QUERIES START */
+/*
+==========================================================================
+MEDIA QUERIES START
+==========================================================================
+*/
 @media screen and (min-width: 72em) {
   .course-lookup-page .container {
     display: flex;
@@ -610,4 +658,8 @@ aside h3 {
     flex: 1;
   }
 }
-/* MEDIA QUERIES END */
+/*
+==========================================================================
+MEDIA QUERIES END
+==========================================================================
+*/
