@@ -309,6 +309,15 @@ article.course footer {
   border-bottom-right-radius: 0.4em;
 }
 
+aside h3 {
+  margin: 0 0 0.2em;
+  text-align: center;
+}
+
+#cart {
+  text-align: center;
+}
+
 #cart ul {
   font-size: 0.8em;
   list-style-type: none;
@@ -316,8 +325,154 @@ article.course footer {
   margin: 0;
 }
 
-#cart button.close {
-  margin: 0.5em;
+#cart li {
+  display: block;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  padding: 1em;
+}
+
+#cart li:hover,
+#cart li:active {
+  background-color: #eee;
+}
+
+#cart li:first-child {
+  border-top-left-radius: 0.4em;
+  border-top-right-radius: 0.4em;
+}
+
+#cart li:last-child {
+  border-bottom: 1px solid #ddd;
+  border-bottom-left-radius: 0.4em;
+  border-bottom-right-radius: 0.4em;
+}
+
+#cart li > div {
+  width: 78%;
+  display: inline-block;
+  padding-right: 2%;
+  text-align: left;
+}
+
+#cart > a {
+  margin: 1em auto;
+}
+
+.schedule-container {
+  position: relative;
+}
+
+.schedule-container #hours,
+.schedule-container #schedule {
+  font-size: 0.8em;
+  height: 40em;
+}
+
+.schedule-container table {
+  width: 100%;
+  height: 100%;
+}
+
+#hours {
+  width: 3em;
+  color: #5F5F5F;
+  background: #CFCFCF;
+  border: 0.1em solid #7F7F7F;
+}
+
+#hours td {
+  padding: 2px 4px 0 0;
+  text-align: right;
+}
+
+#hours tr + tr td {
+  border-top: 1px solid #7F7F7F;
+}
+
+#schedule {
+  cursor: default;
+  position: absolute;
+  left: 3em;
+  top: 0;
+  color: black;
+  background: white;
+  border: 1px solid #7F7F7F;
+}
+
+#schedule td {
+  padding: 0.1em 0.2em 0 0;
+  width: 20em;
+  background: white;
+}
+
+#schedule td.weekend {
+  background: #F3F3F3;
+}
+
+#schedule td + td {
+  border-left: 1px solid #CFCFCF;
+}
+
+#schedule tr + tr td {
+  border-top: 1px solid #CFCFCF;
+}
+
+/* Start day names */
+#schedule tr:first-child td {
+  position: relative;
+}
+#schedule tr:first-child td::before {
+  position: absolute;
+  width: 2em;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0.2em;
+}
+#schedule tr:first-child td.weekend:first-child::before {
+  content: 'SUN';
+}
+#schedule tr:first-child td.weekend:last-child::before {
+  content: 'SAT';
+}
+#schedule tr:first-child td:not(.weekend):nth-child(1)::before,
+#schedule tr:first-child td.weekend + td:not(.weekend):nth-child(2)::before {
+  content: 'MON';
+}
+#schedule tr:first-child td:not(.weekend):nth-child(2)::before,
+#schedule tr:first-child td.weekend ~ td:not(.weekend):nth-child(3)::before {
+  content: 'TUES';
+}
+#schedule tr:first-child td:not(.weekend):nth-child(3)::before,
+#schedule tr:first-child td.weekend ~ td:not(.weekend):nth-child(4)::before {
+  content: 'WED';
+}
+#schedule tr:first-child td:not(.weekend):nth-child(4)::before,
+#schedule tr:first-child td.weekend ~ td:not(.weekend):nth-child(5)::before {
+  content: 'THUR';
+}
+#schedule tr:first-child td:not(.weekend):nth-child(5)::before,
+#schedule tr:first-child td.weekend ~ td:not(.weekend):nth-child(6)::before {
+  content: 'FRI';
+}
+/* End day names */
+
+.color0, .color7, .color14 { background: #FFBF7F; }
+.color1, .color8, .color15 { background: #FFFF7F; }
+.color2, .color9, .color16 { background: #BFFF7F; }
+.color3, .color10, .color17 { background: #9FCFFF; }
+.color4, .color11, .color18 { background: #BF7FFF; }
+.color5, .color12, .color19 { background: #FF9FCF; }
+.color6, .color13, .color20 { background: #BFBFBF; }
+
+.block {
+  padding: 0.1em 0.15em;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border: 0.1em solid black;
+  line-height: 0.75em;
 }
 /* COURSE SEARCH SPECIFIC STYLES END */
 
@@ -329,15 +484,16 @@ article.course footer {
 }
 
 @media screen and (min-width: 60em) {
+  .course-lookup-page .container {
+    display: flex;
+  }
   .course-lookup-page main {
-    width: 70%;
-    float: left;
+    flex: 70;
     margin-right: 1em;
   }
 
   .course-lookup-page aside {
-    float: left;
-    width: 27%;
+    flex: 30;
   }
   .location {
     display: table-cell;
