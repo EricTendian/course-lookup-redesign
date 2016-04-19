@@ -1,3 +1,5 @@
+/* GLOBAL STYLES START */
+
 /*csslint box-sizing: false*/
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 
@@ -26,15 +28,79 @@ h2 {
   font-size: 1.5em;
 }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 .container {
   max-width: 95%;
   margin: 1em auto;
 }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+.banner {
+  height: 6.313em;
+  overflow: hidden;
+  text-align: left;
+  background: url(../img/headerExtender.gif);
+  background-repeat: repeat-x;
+  background-size: contain;
 }
+
+.banner img {
+  width: auto;
+  height: 6.313em;
+}
+
+.navbar {
+  min-width: 100%;
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  text-align: center;
+
+  color: #fff;
+  background-color: #dc002a;
+}
+
+.navbar .nav {
+  font-weight: bold;
+
+  flex: 1;
+}
+
+.navbar .nav a {
+  display: block;
+
+  padding: 0.5em;
+
+  transition: .3s background-color;
+  text-decoration: none;
+
+  color: #fff;
+}
+
+.navbar .nav a:hover,
+.navbar .nav a:active,
+.navbar .nav.active a {
+  background-color: #eee;
+  color: #222;
+}
+
+.nav-logo {
+  margin: 0 1em;
+  height: 2em;
+  width: 1.5em;
+
+  background-image: url(../img/navbutton.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* GLOBAL STYLES END */
 
 /* LOGIN-SPECIFIC STYLES START */
 
@@ -119,68 +185,6 @@ table {
 /* LOGIN-SPECIFIC STYLES END */
 
 /* INDEX-SPECIFIC STYLES START */
-.banner {
-  height: 6.313em;
-  overflow: hidden;
-  text-align: left;
-  background: url(../img/headerExtender.gif);
-  background-repeat: repeat-x;
-  background-size: contain;
-}
-
-.banner img {
-  width: auto;
-  height: 6.313em;
-}
-
-.navbar {
-  min-width: 100%;
-  margin: 0;
-  padding: 0;
-
-  list-style-type: none;
-
-  text-align: center;
-
-  color: #fff;
-  background-color: #dc002a;
-}
-
-.navbar .nav {
-  font-weight: bold;
-
-  flex: 1;
-}
-
-.navbar .nav a {
-  display: block;
-
-  padding: 0.5em;
-
-  transition: .3s background-color;
-  text-decoration: none;
-
-  color: #fff;
-}
-
-.navbar .nav a:hover,
-.navbar .nav a:active,
-.navbar .nav.active a {
-  background-color: #eee;
-  color: #222;
-}
-
-.nav-logo {
-  margin: 0 1em;
-  height: 2em;
-  width: 1.5em;
-
-  background-image: url(../img/navbutton.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .greeting {
   margin: 1em 0;
 
