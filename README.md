@@ -7,6 +7,7 @@ Team members: Jordan Mynes, Zdenek Jaks, Eric Tendian
 ## About the project
 
 View the site live: http://myiit-course-lookup-redesign.s3-website-us-east-1.amazonaws.com/
+
 Or view it live at: http://www.mynes.me/project3/src/login.html
 
 View the repository: https://github.com/ITMD362-JaksMynesTendian/course-lookup-redesign
