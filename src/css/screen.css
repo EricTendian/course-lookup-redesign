@@ -82,13 +82,13 @@ table {
 .login input[type="text"] {
   padding-left: 3em;
 
-  background-image: url(img/user.svg);
+  background-image: url(../img/user.svg);
 }
 
 .login input[type="password"] {
   padding-left: 3em;
 
-  background-image: url(img/key.svg);
+  background-image: url(../img/key.svg);
 }
 
 .login input[type="submit"]:hover {
@@ -108,7 +108,7 @@ table {
   height: 6.313em;
   overflow: hidden;
   text-align: left;
-  background: url(img/headerExtender.gif);
+  background: url(../img/headerExtender.gif);
   background-repeat: repeat-x;
   background-size: contain;
 }
@@ -163,7 +163,7 @@ table {
   height: 2em;
   width: 1.5em;
 
-  background-image: url(img/navbutton.png);
+  background-image: url(../img/navbutton.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -190,6 +190,10 @@ table {
 /* INDEX-SPECIFIC STYLES END */
 
 /* COURSE SEARCH SPECIFIC STYLES START */
+.course-lookup-page .container > main {
+  max-width: none;
+}
+
 #search-form {
   background-color: #eee;
   padding: 1em;
@@ -224,6 +228,10 @@ article.course header,
 article.course footer {
   background-color: #eee;
   padding: 0.5em;
+}
+
+article.course footer {
+  padding-bottom: 0;
 }
 
 article.course header {
@@ -268,6 +276,10 @@ article.course .course-info {
   text-decoration: none;
 }
 
+article.course footer .button {
+  margin-bottom: 0.5em;
+}
+
 .button.button-small {
   font-size: 0.9em;
 }
@@ -293,14 +305,9 @@ article.course .course-info {
   padding-bottom: 0.25em;
 }
 
-.sections .crn,
-.sections .time {
+.sections .crn {
   white-space: nowrap;
   min-width: 10em;
-}
-
-.location, .waitlist {
-  display: none;
 }
 
 article.course footer {
@@ -473,17 +480,12 @@ aside h3 {
   height: 100%;
   border: 0.1em solid black;
   line-height: 0.75em;
+  white-space: nowrap;
 }
 /* COURSE SEARCH SPECIFIC STYLES END */
 
 /* MEDIA QUERIES START */
-@media screen and (min-width: 80em) {
-  .waitlist {
-    display: table-cell;
-  }
-}
-
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 72em) {
   .course-lookup-page .container {
     display: flex;
   }
@@ -491,12 +493,11 @@ aside h3 {
     flex: 70;
     margin-right: 1em;
   }
-
   .course-lookup-page aside {
     flex: 30;
   }
-  .location {
-    display: table-cell;
+  #cart li .button {
+    width: 4em;
   }
 }
 @media screen and (min-width: 48em) {
