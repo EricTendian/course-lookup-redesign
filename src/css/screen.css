@@ -218,7 +218,7 @@ INDEX/ACADEMIC-SPECIFIC STYLES START
 */
 .greeting {
   margin: 1em 0;
-
+  margin-top: 2em;
   font-weight: bold;
   font-style: italic;
 }
@@ -226,8 +226,8 @@ INDEX/ACADEMIC-SPECIFIC STYLES START
 .news {
   display: block;
   text-align: center;
-  margin-top: 1.2em;
-  margin-bottom: 1.2em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .news header h3 {
