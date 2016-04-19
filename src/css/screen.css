@@ -122,6 +122,14 @@ table {
   border: none;
 }
 
+.globalFooter {
+  text-align: right;
+  padding-top: 3em;
+  font-size: 1.5em;
+  color: #444;
+  line-height: 0.5em;
+}
+
 /* GLOBAL STYLES END */
 
 /* LOGIN-SPECIFIC STYLES START */
@@ -488,6 +496,7 @@ aside h3 {
 #schedule tr:first-child td {
   position: relative;
 }
+
 #schedule tr:first-child td::before {
   position: absolute;
   width: 2em;
@@ -496,28 +505,35 @@ aside h3 {
   right: 0;
   top: 0.2em;
 }
+
 #schedule tr:first-child td.weekend:first-child::before {
   content: 'SUN';
 }
+
 #schedule tr:first-child td.weekend:last-child::before {
   content: 'SAT';
 }
+
 #schedule tr:first-child td:not(.weekend):nth-child(1)::before,
 #schedule tr:first-child td.weekend + td:not(.weekend):nth-child(2)::before {
   content: 'MON';
 }
+
 #schedule tr:first-child td:not(.weekend):nth-child(2)::before,
 #schedule tr:first-child td.weekend ~ td:not(.weekend):nth-child(3)::before {
   content: 'TUES';
 }
+
 #schedule tr:first-child td:not(.weekend):nth-child(3)::before,
 #schedule tr:first-child td.weekend ~ td:not(.weekend):nth-child(4)::before {
   content: 'WED';
 }
+
 #schedule tr:first-child td:not(.weekend):nth-child(4)::before,
 #schedule tr:first-child td.weekend ~ td:not(.weekend):nth-child(5)::before {
   content: 'THUR';
 }
+
 #schedule tr:first-child td:not(.weekend):nth-child(5)::before,
 #schedule tr:first-child td.weekend ~ td:not(.weekend):nth-child(6)::before {
   content: 'FRI';
@@ -554,6 +570,11 @@ aside h3 {
   padding-right: 5em;
 }
 
+.academics tbody {
+  margin: auto;
+  width: 50%;
+  display: block;
+}
 /* ACADEMIC-SPECIFIC STYLES END */
 
 /* MEDIA QUERIES START */
