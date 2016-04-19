@@ -115,10 +115,21 @@ table {
   border-top: 0.05em solid #dc002a;
 }
 
-.globalFooter img {
-  width: 2em;
-  display: inline-block;
+.globalFooter .footerLogo {
+  float: right;
 }
+
+.globalFooter .footerLogo img {
+  display: block;
+  width: 2em;
+  margin-left: 1em;
+}
+
+.globalFooter .footerText {
+  margin-right: 2em;
+}
+
+
 /*
 ==========================================================================
 GLOBAL STYLES END
