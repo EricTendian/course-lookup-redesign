@@ -64,7 +64,7 @@ courses by clicking the button, which will take them back to MyIIT and
 automatically input the CRN numbers, then request the user to input their PIN
 to confirm.
 
-Overall, our site is quite minimal, but the simple design makes it much more
+Overall, our site is quite minimal, but the simple design makes it much 
 cleaner than the old MyIIT design. We would like to improve the color scheme
 as well as add more content, but this gives an idea of our prototype for a new
 course search process. Eventually filtering and sorting would have been added
