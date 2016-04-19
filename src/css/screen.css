@@ -337,7 +337,10 @@ article.course footer .button {
 
 .sections .crn {
   white-space: nowrap;
-  min-width: 10em;
+}
+
+.sections table.footable-details tbody th {
+  width: 6em !important;
 }
 
 article.course footer {
