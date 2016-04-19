@@ -26,13 +26,6 @@ h2 {
   font-size: 1.5em;
 }
 
-header h3 {
-	border-style: solid;
-	text-align: center;
-	color: #fff;
-	background-color: #dc002a;
-}
-
 .container {
   max-width: 95%;
   margin: 1em auto;
@@ -188,6 +181,13 @@ table {
   text-align: center;
   margin-top: 1.2em;
   margin-bottom: 1.2em;
+}
+
+.news header h3 {
+	border-style: solid;
+	text-align: center;
+	color: #fff;
+	background-color: #dc002a;
 }
 
 .kaplan {
