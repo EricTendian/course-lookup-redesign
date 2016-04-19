@@ -108,10 +108,16 @@ table {
 
 .globalFooter {
   text-align: right;
-  padding-top: 2em;
+  margin-top: 2em;
   font-size: 1.5em;
   color: #444;
   line-height: 0.5em;
+  border-top: 0.05em solid #dc002a;
+}
+
+.globalFooter img {
+  width: 2em;
+  display: inline-block;
 }
 /*
 ==========================================================================
