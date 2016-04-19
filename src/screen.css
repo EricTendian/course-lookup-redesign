@@ -26,6 +26,13 @@ h2 {
   font-size: 1.5em;
 }
 
+header h3 {
+	border-style: solid;
+	text-align: center;
+	color: #fff;
+	background-color: #dc002a;
+}
+
 .container {
   max-width: 95%;
   margin: 1em auto;
@@ -176,7 +183,7 @@ table {
   font-style: italic;
 }
 
-#news {
+.news {
   display: block;
   text-align: center;
   margin-top: 1.2em;
@@ -187,6 +194,17 @@ table {
   width: 100%;
   height: auto;
 }
+
+.human-design {
+  width: 100%;
+  height: auto;
+}
+
+.iitmag {
+  width: 100%;
+  height: auto;
+}
+
 /* INDEX-SPECIFIC STYLES END */
 
 /* COURSE SEARCH SPECIFIC STYLES START */
