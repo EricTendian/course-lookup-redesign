@@ -122,6 +122,11 @@ table {
   border: none;
 }
 
+.globalFooter {
+  text-align: right;
+  margin-top: 5em;
+}
+
 /* GLOBAL STYLES END */
 
 /* LOGIN-SPECIFIC STYLES START */
@@ -560,6 +565,12 @@ aside h3 {
 .academics table td:first-child {
   font-weight: bold;
   padding-right: 5em;
+}
+
+.academics tbody {
+  margin: auto;
+  width: 50%;
+  display: block;
 }
 /* ACADEMIC-SPECIFIC STYLES END */
 
