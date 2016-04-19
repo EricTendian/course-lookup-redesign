@@ -124,7 +124,10 @@ table {
 
 .globalFooter {
   text-align: right;
-  margin-top: 5em;
+  padding-top: 3em;
+  font-size: 1.5em;
+  color: #444;
+  line-height: 0.5em;
 }
 
 /* GLOBAL STYLES END */
