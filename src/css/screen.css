@@ -103,11 +103,14 @@ table {
 /* Responsive iFrame */
 /* http://themeloom.com/2013/02/tips-embed-google-maps-and-calendars-in-a-responsive-wordpress-theme/ */ 
 .calendar {
-    position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+
+  /* Off by default, turned on by Media Query */
+  display: none;
 }
  
 .calendar iframe {
@@ -558,6 +561,10 @@ aside h3 {
 @media screen and (min-width: 48em) {
   .navbar {
     display: flex;
+  }
+
+  .calendar {
+    display: block;
   }
 }
 @media screen and (min-width: 32em) {
