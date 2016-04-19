@@ -104,6 +104,9 @@ table {
   height: auto;
 }
 
+/* LOGIN-SPECIFIC STYLES END */
+
+/* INDEX-SPECIFIC STYLES START */
 .banner {
   height: 6.313em;
   overflow: hidden;
@@ -118,9 +121,6 @@ table {
   height: 6.313em;
 }
 
-/* LOGIN-SPECIFIC STYLES END */
-
-/* INDEX-SPECIFIC STYLES START */
 .navbar {
   min-width: 100%;
   margin: 0;
