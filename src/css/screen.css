@@ -545,9 +545,14 @@ aside h3 {
 /* ACADEMIC-SPECIFIC STYLES START */
 .academics table {
   display: block;
-  margin-left: 30%;
   text-align: left;
 }
+
+.academics table td:first-child {
+  font-weight: bold;
+  padding-right: 5em;
+}
+
 /* ACADEMIC-SPECIFIC STYLES END */
 
 /* MEDIA QUERIES START */
