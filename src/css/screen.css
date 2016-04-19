@@ -113,6 +113,8 @@ table {
   color: #444;
   line-height: 0.5em;
   border-top: 0.05em solid #dc002a;
+  width: 85%;
+  margin-left: 7.5%;
 }
 
 .globalFooter .footerLogo {
@@ -270,18 +272,19 @@ INDEX/ACADEMIC-SPECIFIC STYLES START
 }
 
 .academics table {
-  display: block;
+  word-wrap: break-word;
   text-align: left;
+  margin: 0 auto;
 }
 
 .academics table td:first-child {
   font-weight: bold;
-  padding-right: 5em;
+  padding-right: 1em;
+  text-align: right;
 }
 
 .academics tbody {
-  margin: auto;
-  width: 50%;
+  margin: left: 10%;
   display: block;
 }
 
