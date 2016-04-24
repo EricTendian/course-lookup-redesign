@@ -5,10 +5,7 @@ GLOBAL STYLES START
 These are styles that are used on most or all pages
 ==========================================================================
 */
-
 /*csslint box-sizing: false*/
-@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
-
 body {
   max-width: 96em;
   margin: 0 auto;
@@ -62,29 +59,26 @@ table {
   min-width: 100%;
   margin: 0;
   padding: 0;
-
   list-style-type: none;
-
   text-align: center;
-
   color: #fff;
   background-color: #dc002a;
 }
 
 .navbar .nav {
   font-weight: bold;
-
-  flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .navbar .nav a {
   display: block;
-
   padding: 0.5em;
-
+  -webkit-transition: .3s background-color;
   transition: .3s background-color;
   text-decoration: none;
-
   color: #fff;
 }
 
@@ -99,7 +93,6 @@ table {
   margin: 0 1em;
   height: 2em;
   width: 1.5em;
-
   background-image: url(../img/navbutton.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -131,28 +124,23 @@ table {
   margin-right: 2em;
 }
 
-
 /*
 ==========================================================================
 GLOBAL STYLES END
 ==========================================================================
 */
-
-
 /*
 ==========================================================================
 LOGIN-SPECIFIC STYLES START
 ==========================================================================
 */
-
 .login {
   position: absolute;
-
   box-sizing: border-box;
   min-width: 100%;
   min-height: 100%;
-
-  border: 1em solid #dc002a; /* Hawk Red */
+  border: 1em solid #dc002a;
+  /* Hawk Red */
 }
 
 .login .page-greeting {
@@ -168,9 +156,7 @@ LOGIN-SPECIFIC STYLES START
 }
 
 .login input {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 50%;
   padding: 1ex;
 }
@@ -179,10 +165,8 @@ LOGIN-SPECIFIC STYLES START
 .login input[type="password"] {
   margin-bottom: 2em;
   padding-left: 3em;
-
   border: none;
   border-bottom: thin solid black;
-
   background-repeat: no-repeat;
   background-attachment: scroll;
 }
@@ -228,8 +212,6 @@ LOGIN-SPECIFIC STYLES START
 LOGIN-SPECIFIC STYLES END
 ==========================================================================
 */
-
-
 /*
 ==========================================================================
 INDEX/ACADEMIC-SPECIFIC STYLES START
@@ -250,10 +232,10 @@ INDEX/ACADEMIC-SPECIFIC STYLES START
 }
 
 .news header h3 {
-	border-style: solid;
-	text-align: center;
-	color: #fff;
-	background-color: #dc002a;
+  border-style: solid;
+  text-align: center;
+  color: #fff;
+  background-color: #dc002a;
 }
 
 .kaplan {
@@ -296,7 +278,6 @@ INDEX/ACADEMIC-SPECIFIC STYLES START
   padding-top: 30px;
   height: 0;
   overflow: hidden;
-
   /* Off by default, turned on by Media Query */
   display: none;
 }
@@ -309,12 +290,12 @@ INDEX/ACADEMIC-SPECIFIC STYLES START
   height: 100%;
   border: none;
 }
+
 /*
 ==========================================================================
 INDEX/ACADEMIC-SPECIFIC STYLES END
 ==========================================================================
 */
-
 /*
 ==========================================================================
 COURSE SEARCH SPECIFIC STYLES START
@@ -324,27 +305,44 @@ COURSE SEARCH SPECIFIC STYLES START
   max-width: none;
 }
 
+.course-lookup-page [class$="-group"] {
+  display: inline;
+}
+
 #search-form {
   background-color: #eee;
   padding: 1em;
   border: 0.1em solid #000;
   border-radius: 0.4em;
 }
+
 #search {
   width: 100%;
   padding: 0.25em 0;
   margin-bottom: 1em;
 }
+
 #search-options {
   clear: both;
 }
+
 .options {
   font-size: 0.8em;
   margin-bottom: 1em;
 }
+
 .options label {
   display: block;
   margin-top: 0.5em;
+}
+
+#noresults {
+  text-align: center;
+  color: #a00;
+}
+
+.hidden {
+  display: none;
 }
 
 article.course {
@@ -441,8 +439,12 @@ article.course footer .button {
   white-space: nowrap;
 }
 
+.footable-toggle + .button-group {
+  width: 11em;
+}
+
 .sections table.footable-details tbody th {
-  width: 6em !important;
+  width: 8em !important;
 }
 
 article.course footer {
@@ -452,7 +454,7 @@ article.course footer {
 }
 
 aside h3 {
-  margin: 0 0 0.2em;
+  margin: 1em 0 0.2em;
   text-align: center;
 }
 
@@ -501,136 +503,28 @@ aside h3 {
   margin: 1em auto;
 }
 
+#schedule .fc-toolbar {
+  display: none;
+}
+
+.fc-unthemed .fc-today {
+  background: inherit;
+}
+
 .schedule-container {
-  position: relative;
+  padding-top: 1em;
 }
 
-.schedule-container #hours,
-.schedule-container #schedule {
-  font-size: 0.8em;
-  height: 40em;
+.fc-time-grid-container {
+  max-height: 80vh !important;
+  height: 50% !important;
 }
 
-.schedule-container table {
-  width: 100%;
-  height: 100%;
-}
-
-#hours {
-  width: 3em;
-  color: #5F5F5F;
-  background: #CFCFCF;
-  border: 0.1em solid #7F7F7F;
-}
-
-#hours td {
-  padding: 2px 4px 0 0;
-  text-align: right;
-}
-
-#hours tr + tr td {
-  border-top: 1px solid #7F7F7F;
-}
-
-#schedule {
-  cursor: default;
-  position: absolute;
-  left: 3em;
-  top: 0;
-  color: black;
-  background: white;
-  border: 1px solid #7F7F7F;
-}
-
-#schedule td {
-  padding: 0.1em 0.2em 0 0;
-  width: 20em;
-  background: white;
-}
-
-#schedule td.weekend {
-  background: #F3F3F3;
-}
-
-#schedule td + td {
-  border-left: 1px solid #CFCFCF;
-}
-
-#schedule tr + tr td {
-  border-top: 1px solid #CFCFCF;
-}
-
-/* Start day names */
-#schedule tr:first-child td {
-  position: relative;
-}
-
-#schedule tr:first-child td::before {
-  position: absolute;
-  width: 2em;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  top: 0.2em;
-}
-
-#schedule tr:first-child td.weekend:first-child::before {
-  content: 'SUN';
-}
-
-#schedule tr:first-child td.weekend:last-child::before {
-  content: 'SAT';
-}
-
-#schedule tr:first-child td:not(.weekend):nth-child(1)::before,
-#schedule tr:first-child td.weekend + td:not(.weekend):nth-child(2)::before {
-  content: 'MON';
-}
-
-#schedule tr:first-child td:not(.weekend):nth-child(2)::before,
-#schedule tr:first-child td.weekend ~ td:not(.weekend):nth-child(3)::before {
-  content: 'TUES';
-}
-
-#schedule tr:first-child td:not(.weekend):nth-child(3)::before,
-#schedule tr:first-child td.weekend ~ td:not(.weekend):nth-child(4)::before {
-  content: 'WED';
-}
-
-#schedule tr:first-child td:not(.weekend):nth-child(4)::before,
-#schedule tr:first-child td.weekend ~ td:not(.weekend):nth-child(5)::before {
-  content: 'THUR';
-}
-
-#schedule tr:first-child td:not(.weekend):nth-child(5)::before,
-#schedule tr:first-child td.weekend ~ td:not(.weekend):nth-child(6)::before {
-  content: 'FRI';
-}
-/* End day names */
-
-.color0, .color7, .color14 { background: #FFBF7F; }
-.color1, .color8, .color15 { background: #FFFF7F; }
-.color2, .color9, .color16 { background: #BFFF7F; }
-.color3, .color10, .color17 { background: #9FCFFF; }
-.color4, .color11, .color18 { background: #BF7FFF; }
-.color5, .color12, .color19 { background: #FF9FCF; }
-.color6, .color13, .color20 { background: #BFBFBF; }
-
-.block {
-  padding: 0.1em 0.15em;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  border: 0.1em solid black;
-  line-height: 0.75em;
-  white-space: nowrap;
-}
 /*
 ==========================================================================
 COURSE SEARCH SPECIFIC STYLES END
 ==========================================================================
 */
-
 /*
 ==========================================================================
 MEDIA QUERIES START
@@ -638,14 +532,23 @@ MEDIA QUERIES START
 */
 @media screen and (min-width: 72em) {
   .course-lookup-page .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
   }
   .course-lookup-page main {
-    flex: 70;
+    -webkit-box-flex: 70;
+    -webkit-flex: 70;
+        -ms-flex: 70;
+            flex: 70;
     margin-right: 1em;
   }
   .course-lookup-page aside {
-    flex: 30;
+    -webkit-box-flex: 30;
+    -webkit-flex: 30;
+        -ms-flex: 30;
+            flex: 30;
   }
   #cart li .button {
     width: 4em;
@@ -654,9 +557,11 @@ MEDIA QUERIES START
 
 @media screen and (min-width: 48em) {
   .navbar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
   }
-
   .calendar {
     display: block;
   }
@@ -664,10 +569,16 @@ MEDIA QUERIES START
 
 @media screen and (min-width: 32em) {
   #search-options {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
   }
   .options {
-    flex: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
   }
 }
 
