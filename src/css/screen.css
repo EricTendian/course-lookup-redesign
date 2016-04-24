@@ -1,6 +1,6 @@
 /*
 ==========================================================================
-GLOBAL STYLES START 
+GLOBAL STYLES START
 
 These are styles that are used on most or all pages
 ==========================================================================
@@ -284,12 +284,12 @@ INDEX/ACADEMIC-SPECIFIC STYLES START
 }
 
 .academics tbody {
-  margin: left: 10%;
+  margin-left: 10%;
   display: block;
 }
 
 /* Responsive iFrame */
-/* http://themeloom.com/2013/02/tips-embed-google-maps-and-calendars-in-a-responsive-wordpress-theme/ */ 
+/* http://themeloom.com/2013/02/tips-embed-google-maps-and-calendars-in-a-responsive-wordpress-theme/ */
 .calendar {
   position: relative;
   padding-bottom: 56.25%;
@@ -300,7 +300,7 @@ INDEX/ACADEMIC-SPECIFIC STYLES START
   /* Off by default, turned on by Media Query */
   display: none;
 }
- 
+
 .calendar iframe {
   position: absolute;
   top: 0;
