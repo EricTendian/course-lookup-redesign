@@ -6,11 +6,14 @@ Team members: Jordan Mynes, Zdenek Jaks, Eric Tendian
 
 ## About the project
 
-View the site live: http://myiit-course-lookup-redesign.s3-website-us-east-1.amazonaws.com/
+**View the site live: http://myiit-course-lookup-redesign.s3-website-us-east-1.amazonaws.com/**
 
-Or view it live at: http://www.mynes.me/project3/src/login.html
+*NOTE: This live link reflects the current changes made on the [interactivity](https://github.com/ITMD362-JaksMynesTendian/course-lookup-redesign/tree/interactivity)
+branch which makes the course search interactive.* In doing so, the CSS and JS
+for different UI elements on the courses.html page may not match up exactly
+with this master branch.
 
-View the repository: https://github.com/ITMD362-JaksMynesTendian/course-lookup-redesign
+**View the repository: https://github.com/ITMD362-JaksMynesTendian/course-lookup-redesign**
 
 We started out by making a very simple login page, that had little unnecessary
 information. Our login page has a username and password field, with a security
@@ -64,7 +67,7 @@ courses by clicking the button, which will take them back to MyIIT and
 automatically input the CRN numbers, then request the user to input their PIN
 to confirm.
 
-Overall, our site is quite minimal, but the simple design makes it much 
+Overall, our site is quite minimal, but the simple design makes it much
 cleaner than the old MyIIT design. We would like to improve the color scheme
 as well as add more content, but this gives an idea of our prototype for a new
 course search process. Eventually filtering and sorting would have been added
